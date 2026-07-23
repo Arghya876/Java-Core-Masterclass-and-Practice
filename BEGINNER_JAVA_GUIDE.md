@@ -6,7 +6,7 @@ Welcome to the **Ultimate Beginner Guide**! This handbook is written in simple, 
 
 ## 📌 1. What is Java?
 
-Java is a popular programming language used to build Android apps, video games, enterprise web software, and cloud applications. Think of Java as a clear set of instructions you write to tell a computer what to do!
+Java is a popular programming language used to build Android apps, video games, enterprise software, and cloud systems. Think of Java as a clear set of instructions you write to tell a computer what to do!
 
 ---
 
@@ -45,17 +45,17 @@ To get floating-point results like `3.333`, write `10.0 / 3.0`.
 
 ---
 
-## 📌 4. Step-by-Step Learning Path
+## 📌 4. Step-by-Step Learning Roadmap
 
-1. **Step 1: Syntax & Main Method** $\rightarrow$ Explore [`/01-java-basics`](./01-java-basics)
-2. **Step 2: Variables & Casting** $\rightarrow$ Explore [`/01-java-basics`](./01-java-basics)
-3. **Step 3: User Input (`Scanner`)** $\rightarrow$ Explore [`/01-java-basics`](./01-java-basics)
-4. **Step 4: Conditionals (`if-else`)** $\rightarrow$ Explore [`/01-java-basics`](./01-java-basics)
-5. **Step 5: Loops (`for`, `while`)** $\rightarrow$ Explore [`/01-java-basics`](./01-java-basics)
-6. **Step 6: Arrays & Searching** $\rightarrow$ Explore [`/01-java-basics`](./01-java-basics)
-7. **Step 7: Math & Logical Programs** $\rightarrow$ Explore [`/01-java-basics`](./01-java-basics)
-8. **Step 8: Object-Oriented Programming** $\rightarrow$ Explore [`/02-object-oriented-programming`](./02-object-oriented-programming)
-9. **Step 9: Exception Handling** $\rightarrow$ Explore [`/03-exception-handling`](./03-exception-handling)
-10. **Step 10: Collections Framework** $\rightarrow$ Explore [`/04-collections-framework`](./04-collections-framework)
+1. **Step 1: Syntax & Main Method** $\rightarrow$ Explore [`01-basics/01-syntax`](./01-basics/01-syntax)
+2. **Step 2: Conditionals & Loops** $\rightarrow$ Explore [`01-basics/02-control-flow`](./01-basics/02-control-flow)
+3. **Step 3: Arrays & Searching** $\rightarrow$ Explore [`01-basics/03-arrays`](./01-basics/03-arrays)
+4. **Step 4: Math Logic & Algorithms** $\rightarrow$ Explore [`01-basics/04-math-logic`](./01-basics/04-math-logic)
+5. **Step 5: Object-Oriented Programming** $\rightarrow$ Explore [`02-oops`](./02-oops)
+6. **Step 6: Strings & Exception Handling** $\rightarrow$ Explore [`03-strings-exceptions`](./03-strings-exceptions)
+7. **Step 7: Collections Framework** $\rightarrow$ Explore [`04-collections`](./04-collections)
+8. **Step 8: File I/O Operations** $\rightarrow$ Explore [`05-file-io`](./05-file-io)
+9. **Step 9: Multithreading** $\rightarrow$ Explore [`06-multithreading`](./06-multithreading)
+10. **Step 10: Modern Java Features** $\rightarrow$ Explore [`07-modern-java`](./07-modern-java)
 
 ⭐ **Have fun learning Java!**
