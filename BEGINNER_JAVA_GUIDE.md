@@ -46,13 +46,13 @@ To get `3.333`, write `10.0 / 3.0`.
 
 ## 📌 4. Step-by-Step Learning Path Roadmap
 
-1. **Step 1: Basics** -> Learn `System.out.println()` & Syntax in [`/01-java-basics/step-01-introduction-and-syntax`](./01-java-basics/step-01-introduction-and-syntax)
-2. **Step 2: Variables** -> Learn Primitives & Casting in [`/01-java-basics/step-02-variables-and-data-types`](./01-java-basics/step-02-variables-and-data-types)
-3. **Step 3: User Input** -> Learn `Scanner` in [`/01-java-basics/step-03-user-input`](./01-java-basics/step-03-user-input)
-4. **Step 4: Conditionals** -> Learn `if-else` in [`/01-java-basics/step-05-decision-making-conditionals`](./01-java-basics/step-05-decision-making-conditionals)
-5. **Step 5: Loops** -> Learn `for` loops in [`/01-java-basics/step-06-loops-and-iterations`](./01-java-basics/step-06-loops-and-iterations)
-6. **Step 6: Arrays** -> Learn lists of data in [`/01-java-basics/step-07-arrays-and-data-structures`](./01-java-basics/step-07-arrays-and-data-structures)
-7. **Step 7: Math Logic** -> Practice Prime & Palindrome in [`/01-java-basics/step-08-math-and-logical-programs`](./01-java-basics/step-08-math-and-logical-programs)
+1. **Step 1: Basics** -> Learn `System.out.println()` & Syntax in [./01-java-basics`](./01-java-basics)
+2. **Step 2: Variables** -> Learn Primitives & Casting in [./01-java-basics`](./01-java-basics)
+3. **Step 3: User Input** -> Learn `Scanner` in [./01-java-basics`](./01-java-basics)
+4. **Step 4: Conditionals** -> Learn `if-else` in [./01-java-basics`](./01-java-basics)
+5. **Step 5: Loops** -> Learn `for` loops in [./01-java-basics`](./01-java-basics)
+6. **Step 6: Arrays** -> Learn lists of data in [./01-java-basics`](./01-java-basics)
+7. **Step 7: Math Logic** -> Practice Prime & Palindrome in [./01-java-basics`](./01-java-basics)
 8. **Step 8: OOPs** -> Learn Classes & Objects in [`/02-object-oriented-programming`](./02-object-oriented-programming)
 9. **Step 9: Exceptions** -> Learn `try-catch` in [`/03-exception-handling`](./03-exception-handling)
 10. **Step 10: Collections** -> Learn `ArrayList` & `HashMap` in [`/04-collections-framework`](./04-collections-framework)

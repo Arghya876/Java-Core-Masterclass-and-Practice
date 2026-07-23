@@ -1,4 +1,4 @@
-# ☕ Ultimate Java Core Masterclass & Practice Repository
+# ☕ Java Learning Concepts
 
 [![Java](https://img.shields.io/badge/Java-8%20%7C%2011%20%7C%2017%20%7C%2021-orange.svg?style=for-the-badge&logo=openjdk)](https://www.oracle.com/java/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
@@ -6,12 +6,12 @@
 [![Campus Placement Ready](https://img.shields.io/badge/Campus_Placements-FAANG_Ready-purple.svg?style=for-the-badge)](./INTERVIEW_QA.md)
 
 [![Author](https://img.shields.io/badge/Author-Arghya876-181717.svg?style=for-the-badge&logo=github)](https://github.com/Arghya876)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Arghya-0A66C2.svg?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/arghya876)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Arghya-0A66C2.svg?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/arghya-bhattacharjee876/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Arghya.tech-FF5722.svg?style=for-the-badge&logo=google-chrome)](https://arghya.tech)
-[![Instagram](https://img.shields.io/badge/Instagram-Arghya876-E4405F.svg?style=for-the-badge&logo=instagram)](https://instagram.com/arghya876)
-[![Facebook](https://img.shields.io/badge/Facebook-Arghya876-1877F2.svg?style=for-the-badge&logo=facebook)](https://facebook.com/arghya876)
+[![Instagram](https://img.shields.io/badge/Instagram-Arghya876-E4405F.svg?style=for-the-badge&logo=instagram)](https://www.instagram.com/arghya.bhattacharjee876/)
+[![Facebook](https://img.shields.io/badge/Facebook-Arghya876-1877F2.svg?style=for-the-badge&logo=facebook)](https://www.facebook.com/arghya.bhattacharjee876)
 
-Welcome to the **Ultimate Java Core Masterclass & Practice Repository** (`Java-Core-Masterclass-and-Practice`), created and maintained by **[Arghya (Arghya876)](https://github.com/Arghya876)**!
+Welcome to the **Java Learning Concepts** repository (`Java-Learning-Concepts`), created and maintained by **[Arghya (Arghya876)](https://github.com/Arghya876)**!
 
 Designed to take college students, job seekers, and developers from **absolute basics** to **advanced production Java**, complete with **Real-World Analogies**, **Mermaid Architecture Diagrams**, **25+ Placement Q&As**, and **50+ Solved Practice Programs**.
 
@@ -23,9 +23,9 @@ Designed to take college students, job seekers, and developers from **absolute b
 | :--- | :--- |
 | 🐙 **GitHub Profile** | [github.com/Arghya876](https://github.com/Arghya876) |
 | 🌐 **Portfolio Website** | [arghya.tech](https://arghya.tech) |
-| 💼 **LinkedIn** | [linkedin.com/in/arghya876](https://linkedin.com/in/arghya876) |
-| 📸 **Instagram** | [instagram.com/arghya876](https://instagram.com/arghya876) |
-| 📘 **Facebook** | [facebook.com/arghya876](https://facebook.com/arghya876) |
+| 💼 **LinkedIn** | [linkedin.com/in/arghya-bhattacharjee876](https://www.linkedin.com/in/arghya-bhattacharjee876/) |
+| 📸 **Instagram** | [instagram.com/arghya.bhattacharjee876](https://www.instagram.com/arghya.bhattacharjee876/) |
+| 📘 **Facebook** | [facebook.com/arghya.bhattacharjee876](https://www.facebook.com/arghya.bhattacharjee876) |
 
 ---
 
@@ -93,15 +93,15 @@ flowchart LR
 ## 🗺️ 3. Complete Basics-to-Advanced 7-Phase Roadmap
 
 ### 🟢 Phase 1: Java Basics ([`/01-java-basics`](./01-java-basics))
-- **Step 1**: [Syntax & Main Entry Point](./01-java-basics/step-01-introduction-and-syntax)
-- **Step 2**: [Variables & Type Casting](./01-java-basics/step-02-variables-and-data-types)
-- **Step 3**: [Scanner Console Input](./01-java-basics/step-03-user-input)
-- **Step 4**: [Operators & Expressions](./01-java-basics/step-04-operators)
-- **Step 5**: [Decision Making (If-Else, Switch)](./01-java-basics/step-05-decision-making-conditionals)
-- **Step 6**: [Loops & Iterations](./01-java-basics/step-06-loops-and-iterations)
-- **Step 7**: [Arrays & Data Structures (Binary Search, Matrix Operations)](./01-java-basics/step-07-arrays-and-data-structures)
-- **Step 8**: [Math & Logical Programs (Fibonacci, Prime, GCD/LCM)](./01-java-basics/step-08-math-and-logical-programs)
-- **Step 9**: [Methods & Recursion](./01-java-basics/step-09-methods-and-recursion)
+- **Step 1**: [Syntax & Main Entry Point](./01-java-basics)
+- **Step 2**: [Variables & Type Casting](./01-java-basics)
+- **Step 3**: [Scanner Console Input](./01-java-basics)
+- **Step 4**: [Operators & Expressions](./01-java-basics)
+- **Step 5**: [Decision Making (If-Else, Switch)](./01-java-basics)
+- **Step 6**: [Loops & Iterations](./01-java-basics)
+- **Step 7**: [Arrays & Data Structures (Binary Search, Matrix Operations)](./01-java-basics)
+- **Step 8**: [Math & Logical Programs (Fibonacci, Prime, GCD/LCM)](./01-java-basics)
+- **Step 9**: [Methods & Recursion](./01-java-basics)
 
 ---
 
@@ -172,6 +172,6 @@ java StreamAPIMasterclass
 ## 🌐 Connect & Follow Arghya
 
 [![GitHub Follow](https://img.shields.io/github/followers/Arghya876?style=social)](https://github.com/Arghya876)
-[![LinkedIn Connect](https://img.shields.io/badge/Connect-Arghya-blue?style=social&logo=linkedin)](https://linkedin.com/in/arghya876)
+[![LinkedIn Connect](https://img.shields.io/badge/Connect-Arghya-blue?style=social&logo=linkedin)](https://www.linkedin.com/in/arghya-bhattacharjee876/)
 
 Crafted with ❤️ by **Arghya (Arghya876)**. Star ⭐ this repository if you find it helpful!
