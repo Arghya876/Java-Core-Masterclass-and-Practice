@@ -1,17 +1,28 @@
-# Java compiled class files
+# Java compiled class files & build outputs
 *.class
 bin/
+build/
+out/
+.gradle/
 
-# Package Files #
+# IDE & Editor metadata
+.classpath
+.project
+.settings/
+.vscode/
+.idea/
+*.iml
+
+# Package files
 *.jar
 *.war
 *.ear
 
-# Runtime generated test files
+# Runtime & temporary files
 my_notes.txt
 *.log
 *.tmp
 
-# OS Generated Files
+# OS generated files
 .DS_Store
 Thumbs.db
