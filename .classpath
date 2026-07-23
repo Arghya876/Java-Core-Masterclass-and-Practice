@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="01-java-basics/step-01-introduction-and-syntax"/>
+	<classpathentry kind="src" path="01-java-basics/step-02-variables-and-data-types"/>
+	<classpathentry kind="src" path="01-java-basics/step-03-user-input"/>
+	<classpathentry kind="src" path="01-java-basics/step-04-operators"/>
+	<classpathentry kind="src" path="01-java-basics/step-05-decision-making-conditionals"/>
+	<classpathentry kind="src" path="01-java-basics/step-06-loops-and-iterations"/>
+	<classpathentry kind="src" path="01-java-basics/step-07-arrays-and-data-structures"/>
+	<classpathentry kind="src" path="01-java-basics/step-08-math-and-logical-programs"/>
+	<classpathentry kind="src" path="01-java-basics/step-09-methods-and-recursion"/>
+	<classpathentry kind="src" path="02-object-oriented-programming"/>
+	<classpathentry kind="src" path="03-exception-handling"/>
+	<classpathentry kind="src" path="04-collections-framework"/>
+	<classpathentry kind="src" path="05-java-io-and-file-handling"/>
+	<classpathentry kind="src" path="06-multithreading-and-concurrency"/>
+	<classpathentry kind="src" path="07-modern-java-features"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
