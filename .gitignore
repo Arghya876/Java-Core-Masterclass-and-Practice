@@ -6,6 +6,11 @@
 *.war
 *.ear
 
+# Runtime generated test files
+my_notes.txt
+*.log
+*.tmp
+
 # IDE and Editor Files
 .vscode/
 .idea/
