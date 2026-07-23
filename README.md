@@ -5,19 +5,9 @@
 [![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-brightgreen.svg?style=for-the-badge)](./BEGINNER_JAVA_GUIDE.md)
 [![Campus Placement Ready](https://img.shields.io/badge/Campus_Placements-FAANG_Ready-purple.svg?style=for-the-badge)](./INTERVIEW_QA.md)
 
-Welcome to the **Ultimate Java Core Roadmap & Practice Repository** (Recommended Repository Name: **`Java-Core-Basics-to-Advanced-Roadmap`** / **`Java-Core-Masterclass-and-Practice`**)!
+Welcome to the **Ultimate Java Core Masterclass & Practice Repository** (`Java-Core-Masterclass-and-Practice`)!
 
 Designed to take college students, job seekers, and developers from **absolute basics** to **advanced production Java**, complete with **Real-World Analogies**, **Mermaid Architecture Diagrams**, **25+ Placement Q&As**, and **50+ Solved Practice Programs**.
-
----
-
-## 🏷️ Recommended Repository Rename
-> [!TIP]
-> To give your GitHub repository a professional, industry-standard name:
-> 1. Go to your repository on GitHub: `https://github.com/Arghya876/Basic-Practice-Programs-in-Java`
-> 2. Click **Settings** ⚙️ (Top right tab).
-> 3. Under **General -> Repository name**, type: `Java-Core-Basics-to-Advanced-Roadmap` (or `Java-Core-Masterclass-and-Practice`).
-> 4. Click **Rename**.
 
 ---
 
@@ -28,7 +18,6 @@ Designed to take college students, job seekers, and developers from **absolute b
 
 ## 📜 Table of Contents
 - [☕ Ultimate Java Core Masterclass \& Practice Repository](#-ultimate-java-core-masterclass--practice-repository)
-  - [🏷️ Recommended Repository Rename](#️-recommended-repository-rename)
   - [🎒 New to Coding? Start Here!](#-new-to-coding-start-here)
   - [📜 Table of Contents](#-table-of-contents)
   - [⏳ 1. History \& Evolution of Java](#-1-history--evolution-of-java)
