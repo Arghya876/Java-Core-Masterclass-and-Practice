@@ -2,58 +2,58 @@
 
 Welcome to **Module 01: Java Basics** of the **Java Learning Concepts** repository.
 
-This module covers core Java syntax, control structures, arrays, math algorithms, and methods, organized into 4 simple sub-topics:
+All programs are arranged in **sequential step-by-step beginner-to-advanced order** across 4 topic subfolders:
 
 ---
 
-## 📌 Folder Breakdown & Topics
+## 📌 Folder Breakdown & Sequential Programs
 
 ### 1. [`01-syntax`](./01-syntax)
-- [`HelloWorldAndJVM.java`](./01-syntax/HelloWorldAndJVM.java): Main entry point, structure, and JVM overview.
-- [`Literals.java`](./01-syntax/Literals.java): Primitive literals (int, float, char, boolean, String).
-- [`ASCII.java`](./01-syntax/ASCII.java): Character encoding and ASCII values.
-- [`DataTypesAndCasting.java`](./01-syntax/DataTypesAndCasting.java): Primitives, sizing, implicit & explicit casting.
-- [`Average.java`](./01-syntax/Average.java): Basic arithmetic operation and average.
-- [`ScannerAndInput.java`](./01-syntax/ScannerAndInput.java): Reading console input via `java.util.Scanner`.
-- [`OperatorsDemo.java`](./01-syntax/OperatorsDemo.java): Arithmetic, Relational, Logical, Bitwise, Ternary, Assignment operators.
-- [`MethodBasics.java`](./01-syntax/MethodBasics.java): Method declaration, parameters, return types, overloading.
-- [`PassByValueDemo.java`](./01-syntax/PassByValueDemo.java): Pass-by-value semantics in Java.
+- [`Step01_HelloWorldAndJVM.java`](./01-syntax/Step01_HelloWorldAndJVM.java): Main entry point, structure, and JVM overview.
+- [`Step02_Literals.java`](./01-syntax/Step02_Literals.java): Primitive literals (int, float, char, boolean, String).
+- [`Step03_ASCII.java`](./01-syntax/Step03_ASCII.java): Character encoding and ASCII values.
+- [`Step04_DataTypesAndCasting.java`](./01-syntax/Step04_DataTypesAndCasting.java): Primitives, sizing, implicit & explicit casting.
+- [`Step05_Average.java`](./01-syntax/Step05_Average.java): Basic arithmetic operation and average.
+- [`Step06_ScannerAndInput.java`](./01-syntax/Step06_ScannerAndInput.java): Reading console input via `java.util.Scanner`.
+- [`Step07_OperatorsDemo.java`](./01-syntax/Step07_OperatorsDemo.java): Arithmetic, Relational, Logical, Bitwise, Ternary, Assignment operators.
+- [`Step08_MethodBasics.java`](./01-syntax/Step08_MethodBasics.java): Method declaration, parameters, return types, overloading.
+- [`Step09_PassByValueDemo.java`](./01-syntax/Step09_PassByValueDemo.java): Pass-by-value semantics in Java.
 
 ### 2. [`02-control-flow`](./02-control-flow)
-- [`OddEven.java`](./02-control-flow/OddEven.java): Simple `if-else` condition.
-- [`MaxNum.java`](./02-control-flow/MaxNum.java): Finding maximum between two numbers.
-- [`MaxInThree.java`](./02-control-flow/MaxInThree.java): Nested `if-else` for maximum among three numbers.
-- [`VowelConsonant.java`](./02-control-flow/VowelConsonant.java): `switch-case` statement.
-- [`TaxCal.java`](./02-control-flow/TaxCal.java): Income tax slab calculation logic.
-- [`NaturalNum.java`](./02-control-flow/NaturalNum.java): `while` loop for printing natural numbers.
-- [`CharPrint.java`](./02-control-flow/CharPrint.java): Iterating character ranges with loops.
-- [`MulTable.java`](./02-control-flow/MulTable.java): Multiplication table generator.
-- [`SumNNum.java`](./02-control-flow/SumNNum.java): Sum of first N natural numbers.
-- [`OddNumInRange.java`](./02-control-flow/OddNumInRange.java): Range filtering with loops.
+- [`Step01_OddEven.java`](./02-control-flow/Step01_OddEven.java): Simple `if-else` condition.
+- [`Step02_MaxNum.java`](./02-control-flow/Step02_MaxNum.java): Finding maximum between two numbers.
+- [`Step03_MaxInThree.java`](./02-control-flow/Step03_MaxInThree.java): Nested `if-else` for maximum among three numbers.
+- [`Step04_VowelConsonant.java`](./02-control-flow/Step04_VowelConsonant.java): `switch-case` statement.
+- [`Step05_TaxCal.java`](./02-control-flow/Step05_TaxCal.java): Income tax slab calculation logic.
+- [`Step06_NaturalNum.java`](./02-control-flow/Step06_NaturalNum.java): `while` loop for printing natural numbers.
+- [`Step07_CharPrint.java`](./02-control-flow/Step07_CharPrint.java): Iterating character ranges with loops.
+- [`Step08_MulTable.java`](./02-control-flow/Step08_MulTable.java): Multiplication table generator.
+- [`Step09_SumNNum.java`](./02-control-flow/Step09_SumNNum.java): Sum of first N natural numbers.
+- [`Step10_OddNumInRange.java`](./02-control-flow/Step10_OddNumInRange.java): Range filtering with loops.
 
 ### 3. [`03-arrays`](./03-arrays)
-- [`ArrayDemo.java`](./03-arrays/ArrayDemo.java): 1D Array declaration, allocation, indexing.
-- [`ArrayMethod.java`](./03-arrays/ArrayMethod.java): Array manipulation methods.
-- [`SumArrayEle.java`](./03-arrays/SumArrayEle.java): Summing array elements.
-- [`AveArray.java`](./03-arrays/AveArray.java): Mean of array values.
-- [`BiggestEleArray.java`](./03-arrays/BiggestEleArray.java) & [`SmallestEleArray.java`](./03-arrays/SmallestEleArray.java): Min/Max element search.
-- [`ArrayRev.java`](./03-arrays/ArrayRev.java): In-place array reversal.
-- [`CopyArrEle.java`](./03-arrays/CopyArrEle.java): Copying array contents.
-- [`SearchEleInArr.java`](./03-arrays/SearchEleInArr.java): Linear Search algorithm.
-- [`BinarySearchDemo.java`](./03-arrays/BinarySearchDemo.java): Binary Search algorithm ($O(\log N)$).
-- [`SortArrayInAscending.java`](./03-arrays/SortArrayInAscending.java) & [`SortArrayInDescending.java`](./03-arrays/SortArrayInDescending.java): Bubble sort algorithms.
-- [`MatrixOperations.java`](./03-arrays/MatrixOperations.java): 2D Arrays, Matrix addition, subtraction, multiplication.
+- [`Step01_ArrayDemo.java`](./03-arrays/Step01_ArrayDemo.java): 1D Array declaration, allocation, indexing.
+- [`Step02_ArrayMethod.java`](./03-arrays/Step02_ArrayMethod.java): Array manipulation methods.
+- [`Step03_SumArrayEle.java`](./03-arrays/Step03_SumArrayEle.java): Summing array elements.
+- [`Step04_AveArray.java`](./03-arrays/Step04_AveArray.java): Mean of array values.
+- [`Step05_BiggestEleArray.java`](./03-arrays/Step05_BiggestEleArray.java) & [`Step06_SmallestEleArray.java`](./03-arrays/Step06_SmallestEleArray.java): Min/Max element search.
+- [`Step07_ArrayRev.java`](./03-arrays/Step07_ArrayRev.java): In-place array reversal.
+- [`Step08_CopyArrEle.java`](./03-arrays/Step08_CopyArrEle.java): Copying array contents.
+- [`Step09_SearchEleInArr.java`](./03-arrays/Step09_SearchEleInArr.java): Linear Search algorithm.
+- [`Step10_BinarySearchDemo.java`](./03-arrays/Step10_BinarySearchDemo.java): Binary Search algorithm ($O(\log N)$).
+- [`Step11_SortArrayInAscending.java`](./03-arrays/Step11_SortArrayInAscending.java) & [`Step12_SortArrayInDescending.java`](./03-arrays/Step12_SortArrayInDescending.java): Bubble sort algorithms.
+- [`Step13_MatrixOperations.java`](./03-arrays/Step13_MatrixOperations.java): 2D Arrays, Matrix addition, subtraction, multiplication.
 
 ### 4. [`04-math-logic`](./04-math-logic)
-- [`CountDigits.java`](./04-math-logic/CountDigits.java) & [`SumDigit.java`](./04-math-logic/SumDigit.java): Digit extraction and summation.
-- [`RevNum.java`](./04-math-logic/RevNum.java) & [`PalindromeNum.java`](./04-math-logic/PalindromeNum.java): Number reversal and palindrome check.
-- [`Factorial.java`](./04-math-logic/Factorial.java): Iterative factorial calculation.
-- [`Power.java`](./04-math-logic/Power.java): Exponential power calculation (`a^b`).
-- [`Prime.java`](./04-math-logic/Prime.java) & [`PrimeNumBetweenTwo.java`](./04-math-logic/PrimeNumBetweenTwo.java): Primality test algorithms.
-- [`FibonacciSeries.java`](./04-math-logic/FibonacciSeries.java): Fibonacci series generation.
-- [`GCDandLCM.java`](./04-math-logic/GCDandLCM.java): Euclidean algorithm for GCD and LCM.
-- [`ArmstrongNum.java`](./04-math-logic/ArmstrongNum.java): Armstrong number check.
-- [`PerfectNum.java`](./04-math-logic/PerfectNum.java): Perfect number determination.
+- [`Step01_CountDigits.java`](./04-math-logic/Step01_CountDigits.java) & [`Step02_SumDigit.java`](./04-math-logic/Step02_SumDigit.java): Digit extraction and summation.
+- [`Step03_RevNum.java`](./04-math-logic/Step03_RevNum.java) & [`Step04_PalindromeNum.java`](./04-math-logic/Step04_PalindromeNum.java): Number reversal and palindrome check.
+- [`Step05_Factorial.java`](./04-math-logic/Step05_Factorial.java): Iterative factorial calculation.
+- [`Step06_Power.java`](./04-math-logic/Step06_Power.java): Exponential power calculation (`a^b`).
+- [`Step07_Prime.java`](./04-math-logic/Step07_Prime.java) & [`Step08_PrimeNumBetweenTwo.java`](./04-math-logic/Step08_PrimeNumBetweenTwo.java): Primality test algorithms.
+- [`Step09_FibonacciSeries.java`](./04-math-logic/Step09_FibonacciSeries.java): Fibonacci series generation.
+- [`Step10_GCDandLCM.java`](./04-math-logic/Step10_GCDandLCM.java): Euclidean algorithm for GCD and LCM.
+- [`Step11_ArmstrongNum.java`](./04-math-logic/Step11_ArmstrongNum.java): Armstrong number check.
+- [`Step12_PerfectNum.java`](./04-math-logic/Step12_PerfectNum.java): Perfect number determination.
 
 ---
 
@@ -61,6 +61,6 @@ This module covers core Java syntax, control structures, arrays, math algorithms
 
 ```bash
 cd 01-basics/01-syntax
-javac HelloWorldAndJVM.java
-java HelloWorldAndJVM
+javac Step01_HelloWorldAndJVM.java
+java Step01_HelloWorldAndJVM
 ```
