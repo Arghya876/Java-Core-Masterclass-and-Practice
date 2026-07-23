@@ -1,15 +1,38 @@
-# ☕ Ultimate Java Core Roadmap & Practice Repository
+# ☕ Ultimate Java Core Roadmap & Beginner-Friendly Practice Repo
 
 [![Java](https://img.shields.io/badge/Java-8%20%7C%2011%20%7C%2017%20%7C%2021-orange.svg?style=for-the-badge&logo=openjdk)](https://www.oracle.com/java/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-green.svg?style=for-the-badge)](./01-java-basics)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge)](https://github.com/Arghya876/Basic-Practice-Programs-in-Java/pulls)
 
-Welcome to the **Ultimate Java Core Roadmap & Practice Repository** (`Java-Core-Roadmap-and-Practice`)! This repository is designed as a complete, step-by-step master guide for learning Core Java from absolute fundamentals to modern Java (Java 8 through Java 21+ LTS), complete with interactive **Mermaid Diagrams**, **Top Interview Q&As**, and **Coding Challenges**.
+Welcome to the **Ultimate Java Core Roadmap & Practice Repository** (`Java-Core-Roadmap-and-Practice`)! 
+
+Whether you are a **complete beginner**, a **college student**, or an **interview candidate**, this repository is designed step-by-step to guide you from absolute zero to mastering Java Core with interactive **Mermaid Diagrams**, **Beginner-Friendly Guides**, **Interview Q&As**, and **Coding Challenges**.
+
+---
+
+## 🗺️ How to Learn From This Repository (Beginner Roadmap)
+
+Start with **[Phase 1: Java Basics](./01-java-basics)** and follow the numbered steps in order:
+
+```
+01-java-basics/
+├── 📍 step-01-introduction-and-syntax       ---> Your First Program, Class, Main Method
+├── 📍 step-02-variables-and-data-types       ---> Primitives, Memory Sizes & Type Casting
+├── 📍 step-03-user-input                     ---> Interactive Console Input using Scanner
+├── 📍 step-04-operators                      ---> Arithmetic, Logical, Bitwise & Ternary
+├── 📍 step-05-decision-making-conditionals  ---> If-Else, Switch-Case & Logic Trees
+├── 📍 step-06-loops-and-iterations           ---> For, While, Do-While & Series
+├── 📍 step-07-arrays-and-data-structures     ---> 1D/2D Arrays, Reversing, Min/Max, Sorting
+├── 📍 step-08-math-and-logical-programs      ---> Prime, Palindrome, Armstrong, Factorial
+└── 📍 step-09-methods-and-recursion          ---> Reusable Functions & Pass-By-Value
+```
 
 ---
 
 ## 📜 Table of Contents
-- [☕ Ultimate Java Core Roadmap \& Practice Repository](#-ultimate-java-core-roadmap--practice-repository)
+- [☕ Ultimate Java Core Roadmap \& Beginner-Friendly Practice Repo](#-ultimate-java-core-roadmap--beginner-friendly-practice-repo)
+  - [🗺️ How to Learn From This Repository (Beginner Roadmap)](#️-how-to-learn-from-this-repository-beginner-roadmap)
   - [📜 Table of Contents](#-table-of-contents)
   - [⏳ 1. History \& Evolution of Java](#-1-history--evolution-of-java)
   - [🏗️ 2. Java Architecture \& Visual Memory Diagrams](#️-2-java-architecture--visual-memory-diagrams)
@@ -18,19 +41,10 @@ Welcome to the **Ultimate Java Core Roadmap & Practice Repository** (`Java-Core-
     - [2.3 Stack vs Heap Memory \& Pass-by-Value Diagram](#23-stack-vs-heap-memory--pass-by-value-diagram)
     - [2.4 String Constant Pool (SCP) Memory Model Diagram](#24-string-constant-pool-scp-memory-model-diagram)
     - [2.5 Exception Handling Hierarchy Diagram](#25-exception-handling-hierarchy-diagram)
-  - [🗺️ 3. Master Java Core Step-by-Step Roadmap](#️-3-master-java-core-step-by-step-roadmap)
-  - [📁 4. Phase 1: Java Basics Practice Index](#-4-phase-1-java-basics-practice-index)
-    - [Module 1: Fundamentals \& Syntax](#module-1-fundamentals--syntax)
-    - [Module 2: Operators \& Control Flow](#module-2-operators--control-flow)
-    - [Module 3: Loops \& Iteration](#module-3-loops--iteration)
-    - [Module 4: Arrays \& Operations](#module-4-arrays--operations)
-    - [Module 5: Math \& Number Logic Programs](#module-5-math--number-logic-programs)
-    - [Module 6: Methods \& Scope](#module-6-methods--scope)
-  - [❓ 5. Popular Core Java Interview Questions \& Answers](#-5-popular-core-java-interview-questions--answers)
-  - [💻 6. Top Java Coding Challenges](#-6-top-java-coding-challenges)
-  - [🚀 7. How to Run the Programs](#-7-how-to-run-the-programs)
-    - [Command Line (CLI)](#command-line-cli)
-    - [VS Code](#vs-code)
+  - [🎓 3. Complete Step-by-Step Beginner Modules Index](#-3-complete-step-by-step-beginner-modules-index)
+  - [❓ 4. Popular Core Java Interview Questions \& Answers](#-4-popular-core-java-interview-questions--answers)
+  - [💻 5. Top Java Coding Challenges](#-5-top-java-coding-challenges)
+  - [🚀 6. How to Run the Programs](#-6-how-to-run-the-programs)
 
 ---
 
@@ -115,8 +129,6 @@ flowchart TD
 
 ### 2.3 Stack vs Heap Memory & Pass-by-Value Diagram
 
-In Java, method call frames and primitive variables are stored on the **Stack**, while objects are stored on the **Heap**. References copied into method calls point to the same memory addresses on the Heap.
-
 ```mermaid
 flowchart LR
     subgraph StackMemory ["Stack Frame (Method Call)"]
@@ -165,139 +177,76 @@ flowchart TD
     Throwable --> Exception["java.lang.Exception"]
     Throwable --> Error["java.lang.Error (VirtualMachineError, StackOverflowError)"]
     
-    Exception --> Checked["Checked Exceptions (Compile-Time)\n- IOException\n- SQLException\n- ClassNotFoundException"]
+    Exception --> Checked["Checked Exceptions (Compile-Time)\n- IOException\n- SQLException"]
     Exception --> Unchecked["Unchecked Exceptions (Runtime)\n- ArithmeticException\n- NullPointerException\n- ArrayIndexOutOfBoundsException"]
 ```
 
 ---
 
-## 🗺️ 3. Master Java Core Step-by-Step Roadmap
+## 🎓 3. Complete Step-by-Step Beginner Modules Index
 
-Below is the complete 7-Phase Core Java Learning Path:
+### 🟢 Phase 1: Java Basics (`/01-java-basics`)
 
-```
-[Phase 1: Java Basics] 
-       │
-       ▼
-[Phase 2: Object-Oriented Programming (OOPs)] 
-       │
-       ▼
-[Phase 3: Exception Handling & Strings] 
-       │
-       ▼
-[Phase 4: Java Collections Framework (JCF)] 
-       │
-       ▼
-[Phase 5: Java I/O & File Operations] 
-       │
-       ▼
-[Phase 6: Multithreading & Concurrency] 
-       │
-       ▼
-[Phase 7: Modern Java Features (Java 8 - 21+)]
-```
+#### Step 1: Introduction & Syntax ([`step-01-introduction-and-syntax`](./01-java-basics/step-01-introduction-and-syntax))
+- [README.md](./01-java-basics/step-01-introduction-and-syntax/README.md): Beginner introduction to class, main method, compilation.
+- [HelloWorldAndJVM.java](./01-java-basics/step-01-introduction-and-syntax/HelloWorldAndJVM.java): Hello world & JVM environment props.
+- [Literals.java](./01-java-basics/step-01-introduction-and-syntax/Literals.java): Integer, decimal, char, boolean literals.
+- [ASCII.java](./01-java-basics/step-01-introduction-and-syntax/ASCII.java): Character to ASCII code mapping.
 
-### Phase Summary:
+#### Step 2: Variables & Data Types ([`step-02-variables-and-data-types`](./01-java-basics/step-02-variables-and-data-types))
+- [README.md](./01-java-basics/step-02-variables-and-data-types/README.md): Memory sizes & type casting rules.
+- [DataTypesAndCasting.java](./01-java-basics/step-02-variables-and-data-types/DataTypesAndCasting.java): Primitives, widening, narrowing casting.
+- [Average.java](./01-java-basics/step-02-variables-and-data-types/Average.java): Floating point average calculations.
 
-1. 🟢 **[Phase 1: Java Basics](./01-basics)** *(Completed & Fully Implemented)*:
-   - JDK/JVM Architecture, Syntax, Primitives, Type Casting, Scanner Input.
-   - Operators (Arithmetic, Bitwise, Logical, Shift, Ternary).
-   - Control Flow (`if-else`, `switch-case`) & Loops (`for`, `while`, `do-while`).
-   - Arrays (1D, 2D, Reversing, Sorting, Searching).
-   - Math & Number Logic (Prime, Palindrome, Armstrong, Factorial, Fibonacci).
-   - Method Signatures, Overloading, Recursion, Pass-by-Value principles.
+#### Step 3: Interactive User Input ([`step-03-user-input`](./01-java-basics/step-03-user-input))
+- [README.md](./01-java-basics/step-03-user-input/README.md): Scanner guide & newline buffer fix.
+- [ScannerAndInput.java](./01-java-basics/step-03-user-input/ScannerAndInput.java): Reading name, age, GPA, strings.
 
-2. 🟡 **[Phase 2: Object-Oriented Programming (OOPs)](./02-oops)**:
-   - Classes, Objects, Constructors, `this` and `super` keywords.
-   - Encapsulation, Access Modifiers, Getters/Setters.
-   - Inheritance, Polymorphism (Overloading vs Overriding), Dynamic Dispatch.
-   - Abstraction (Abstract Classes vs Interfaces, Java 8 default/static methods).
+#### Step 4: Operators & Expressions ([`step-04-operators`](./01-java-basics/step-04-operators))
+- [README.md](./01-java-basics/step-04-operators/README.md): Operators guide.
+- [OperatorsDemo.java](./01-java-basics/step-04-operators/OperatorsDemo.java): Arithmetic, bitwise, shift, ternary operators.
 
-3. 🔵 **[Phase 3: Exception Handling & Strings](./03-exception-handling)**:
-   - Checked vs Unchecked Exceptions, `try-catch-finally`, `try-with-resources`.
-   - Custom Exceptions, `throw` vs `throws`.
-   - String Immutability, String Constant Pool (SCP), `StringBuilder` vs `StringBuffer`.
+#### Step 5: Decision Making & Conditionals ([`step-05-decision-making-conditionals`](./01-java-basics/step-05-decision-making-conditionals))
+- [README.md](./01-java-basics/step-05-decision-making-conditionals/README.md): If-else & switch-case guide.
+- [OddEven.java](./01-java-basics/step-05-decision-making-conditionals/OddEven.java): Odd/even check.
+- [MaxNum.java](./01-java-basics/step-05-decision-making-conditionals/MaxNum.java): Comparing two numbers.
+- [MaxInThree.java](./01-java-basics/step-05-decision-making-conditionals/MaxInThree.java): Finding maximum of 3 numbers.
+- [VowelConsonant.java](./01-java-basics/step-05-decision-making-conditionals/VowelConsonant.java): Switch case vowel check.
+- [TaxCal.java](./01-java-basics/step-05-decision-making-conditionals/TaxCal.java): Tax calculation rules.
 
-4. 🟣 **[Phase 4: Java Collections Framework](./04-collections-framework)**:
-   - `List` (`ArrayList`, `LinkedList`), `Set` (`HashSet`, `TreeSet`), `Map` (`HashMap`, `TreeMap`).
-   - `Iterator`, `Comparable` vs `Comparator`, internal `HashMap` working.
+#### Step 6: Loops & Iterations ([`step-06-loops-and-iterations`](./01-java-basics/step-06-loops-and-iterations))
+- [README.md](./01-java-basics/step-06-loops-and-iterations/README.md): For, While, Do-While loop guide.
+- [NaturalNum.java](./01-java-basics/step-06-loops-and-iterations/NaturalNum.java): N natural numbers.
+- [OddNumInRange.java](./01-java-basics/step-06-loops-and-iterations/OddNumInRange.java): Odd numbers filter.
+- [MulTable.java](./01-java-basics/step-06-loops-and-iterations/MulTable.java): Multiplication table generator.
+- [SumNNum.java](./01-java-basics/step-06-loops-and-iterations/SumNNum.java): Sum of first N numbers.
+- [CharPrint.java](./01-java-basics/step-06-loops-and-iterations/CharPrint.java): Alphabet character loop.
 
-5. 🟤 **[Phase 5: Java I/O & File Operations](./06-java-io-nio)**:
-   - Byte & Character Streams, `BufferedReader`/`BufferedWriter`.
-   - Serialization & Deserialization (`transient`).
-   - Java NIO.2 (`Path`, `Files`).
+#### Step 7: Arrays & Data Structures ([`step-07-arrays-and-data-structures`](./01-java-basics/step-07-arrays-and-data-structures))
+- [README.md](./01-java-basics/step-07-arrays-and-data-structures/README.md): 0-indexed memory array guide.
+- [ArrayDemo.java](./01-java-basics/step-07-arrays-and-data-structures/ArrayDemo.java), [SumArrayEle.java](./01-java-basics/step-07-arrays-and-data-structures/SumArrayEle.java), [AveArray.java](./01-java-basics/step-07-arrays-and-data-structures/AveArray.java), [BiggestEleArray.java](./01-java-basics/step-07-arrays-and-data-structures/BiggestEleArray.java), [SmallestEleArray.java](./01-java-basics/step-07-arrays-and-data-structures/SmallestEleArray.java), [ArrayRev.java](./01-java-basics/step-07-arrays-and-data-structures/ArrayRev.java), [CopyArrEle.java](./01-java-basics/step-07-arrays-and-data-structures/CopyArrEle.java), [ScearchEleInArr.java](./01-java-basics/step-07-arrays-and-data-structures/ScearchEleInArr.java), [SortArrayInAscending.java](./01-java-basics/step-07-arrays-and-data-structures/SortArrayInAscending.java), [SortArrayInDescending.java](./01-java-basics/step-07-arrays-and-data-structures/SortArrayInDescending.java), [ArrayMethod.java](./01-java-basics/step-07-arrays-and-data-structures/ArrayMethod.java).
 
-6. 🔴 **[Phase 6: Multithreading & Concurrency](./05-multithreading)**:
-   - `Thread`, `Runnable`, `Callable`, Thread Lifecycle.
-   - Synchronization, Race Conditions, `wait()`/`notify()`, `volatile`, Atomic variables.
-   - `ExecutorService`, Thread Pools, `Future`.
+#### Step 8: Math & Logical Programs ([`step-08-math-and-logical-programs`](./01-java-basics/step-08-math-and-logical-programs))
+- [README.md](./01-java-basics/step-08-math-and-logical-programs/README.md): Math interview problems guide.
+- [CountDigits.java](./01-java-basics/step-08-math-and-logical-programs/CountDigits.java), [SumDigit.java](./01-java-basics/step-08-math-and-logical-programs/SumDigit.java), [RevNum.java](./01-java-basics/step-08-math-and-logical-programs/RevNum.java), [Factorial.java](./01-java-basics/step-08-math-and-logical-programs/Factorial.java), [Power.java](./01-java-basics/step-08-math-and-logical-programs/Power.java), [Prime.java](./01-java-basics/step-08-math-and-logical-programs/Prime.java), [PrimeNumBetweenTwo.java](./01-java-basics/step-08-math-and-logical-programs/PrimeNumBetweenTwo.java), [PalindromeNum.java](./01-java-basics/step-08-math-and-logical-programs/PalindromeNum.java), [ArmstrongNum.java](./01-java-basics/step-08-math-and-logical-programs/ArmstrongNum.java), [PerfectNum.java](./01-java-basics/step-08-math-and-logical-programs/PerfectNum.java).
 
-7. ⚡ **[Phase 7: Modern Java Features](./07-modern-java-features)**:
-   - Lambdas, Stream API (`filter`, `map`, `reduce`, `collect`), `Optional`.
-   - Records, Sealed Classes, Pattern Matching, Text Blocks.
-   - Virtual Threads (Java 21 Project Loom).
+#### Step 9: Methods & Recursion ([`step-09-methods-and-recursion`](./01-java-basics/step-09-methods-and-recursion))
+- [README.md](./01-java-basics/step-09-methods-and-recursion/README.md): Functions & pass-by-value guide.
+- [MethodBasics.java](./01-java-basics/step-09-methods-and-recursion/MethodBasics.java), [PassByValueDemo.java](./01-java-basics/step-09-methods-and-recursion/PassByValueDemo.java).
 
 ---
 
-## 📁 4. Phase 1: Java Basics Practice Index
-
-All Phase 1 foundational programs are organized inside [`/01-basics`](./01-basics):
-
-### Module 1: Fundamentals & Syntax
-- [HelloWorldAndJVM.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/01-fundamentals/HelloWorldAndJVM.java): Main entry point, System properties, CLI arguments.
-- [DataTypesAndCasting.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/01-fundamentals/DataTypesAndCasting.java): Primitives, memory sizes, implicit (widening) & explicit (narrowing) casting.
-- [ScannerAndInput.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/01-fundamentals/ScannerAndInput.java): Interactive user console input & buffer flushing.
-- [Literals.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/01-fundamentals/Literals.java): Integer, floating-point, character, and string literals.
-- [ASCII.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/01-fundamentals/ASCII.java): Character to ASCII value conversions.
-- [Average.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/01-fundamentals/Average.java): Calculating arithmetic mean of numbers.
-
-### Module 2: Operators & Control Flow
-- [OperatorsDemo.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/02-operators-and-control-flow/OperatorsDemo.java): Arithmetic, relational, logical short-circuit, bitwise & ternary operators.
-- [MaxInThree.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/02-operators-and-control-flow/MaxInThree.java): Decision tree to find maximum among 3 numbers.
-- [MaxNum.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/02-operators-and-control-flow/MaxNum.java): Comparing two numbers.
-- [OddEven.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/02-operators-and-control-flow/OddEven.java): Odd/Even check using modulus operator.
-- [TaxCal.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/02-operators-and-control-flow/TaxCal.java): Income tax calculation using multi-tier conditional blocks.
-- [VowelConsonant.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/02-operators-and-control-flow/VowelConsonant.java): Switch-case character classification.
-
-### Module 3: Loops & Iteration
-- [CharPrint.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/03-loops-and-iteration/CharPrint.java): Iterating and printing character sequences.
-- [MulTable.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/03-loops-and-iteration/MulTable.java): Generating multiplication table using loops.
-- [NaturalNum.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/03-loops-and-iteration/NaturalNum.java): Printing sequence of N natural numbers.
-- [OddNumInRange.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/03-loops-and-iteration/OddNumInRange.java): Range filtration for odd numbers.
-- [SumNNum.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/03-loops-and-iteration/SumNNum.java): Accumulating sum of first N natural numbers.
-
-### Module 4: Arrays & Operations
-- [ArrayDemo.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/04-arrays/ArrayDemo.java): Array declaration, instantiation, indexing & traversal.
-- [ArrayMethod.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/04-arrays/ArrayMethod.java): Array manipulation techniques.
-- [ArrayRev.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/04-arrays/ArrayRev.java): Two-pointer array reversing algorithm.
-- [AveArray.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/04-arrays/AveArray.java): Average calculation of array elements.
-- [BiggestEleArray.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/04-arrays/BiggestEleArray.java): Finding maximum element in an array.
-- [SmallestEleArray.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/04-arrays/SmallestEleArray.java): Finding minimum element in an array.
-- [CopyArrEle.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/04-arrays/CopyArrEle.java): Copying elements between array structures.
-- [ScearchEleInArr.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/04-arrays/ScearchEleInArr.java): Linear search element lookup.
-- [SortArrayInAscending.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/04-arrays/SortArrayInAscending.java): Bubble sort ascending order.
-- [SortArrayInDescending.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/04-arrays/SortArrayInDescending.java): Sorting elements in descending order.
-- [SumArrayEle.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/04-arrays/SumArrayEle.java): Summing array elements.
-
-### Module 5: Math & Number Logic Programs
-- [ArmstrongNum.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/05-math-and-number-programs/ArmstrongNum.java): Narcissistic number check.
-- [CountDigits.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/05-math-and-number-programs/CountDigits.java): Counting total digits in a number.
-- [Factorial.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/05-math-and-number-programs/Factorial.java): Iterative factorial calculation.
-- [PalindromeNum.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/05-math-and-number-programs/PalindromeNum.java): Reversal & comparison logic for palindrome check.
-- [PerfectNum.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/05-math-and-number-programs/PerfectNum.java): Sum of proper divisors check.
-- [Power.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/05-math-and-number-programs/Power.java): Calculating base raised to exponent.
-- [Prime.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/05-math-and-number-programs/Prime.java): Optimized primality test.
-- [PrimeNumBetweenTwo.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/05-math-and-number-programs/PrimeNumBetweenTwo.java): Generating prime numbers within an interval.
-- [RevNum.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/05-math-and-number-programs/RevNum.java): Digit extraction & number reversal.
-- [SumDigit.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/05-math-and-number-programs/SumDigit.java): Summing digits of an integer.
-
-### Module 6: Methods & Scope
-- [MethodBasics.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/06-methods-and-scope/MethodBasics.java): Method declaration, parameters, return types, overloading & recursion.
-- [PassByValueDemo.java](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-basics/06-methods-and-scope/PassByValueDemo.java): Java pass-by-value proof for primitives vs object references.
+### 🟡 Future Phases
+- 🟡 **[Phase 2: Object-Oriented Programming (OOPs)](./02-object-oriented-programming)**
+- 🔵 **[Phase 3: Exception Handling & Strings](./03-exception-handling)**
+- 🟣 **[Phase 4: Java Collections Framework](./04-collections-framework)**
+- 🟤 **[Phase 5: Java I/O & File Operations](./05-java-io-and-file-handling)**
+- 🔴 **[Phase 6: Multithreading & Concurrency](./06-multithreading-and-concurrency)**
+- ⚡ **[Phase 7: Modern Java Features](./07-modern-java-features)**
 
 ---
 
-## ❓ 5. Popular Core Java Interview Questions & Answers
+## ❓ 4. Popular Core Java Interview Questions & Answers
 
 Read the complete conceptual interview guide in [`INTERVIEW_QA.md`](./INTERVIEW_QA.md):
 1. Why is Java platform-independent, but JVM platform-dependent?
@@ -312,47 +261,37 @@ Read the complete conceptual interview guide in [`INTERVIEW_QA.md`](./INTERVIEW_
 
 ---
 
-## 💻 6. Top Java Coding Challenges
+## 💻 5. Top Java Coding Challenges
 
 Practice essential coding interview problems in [`CODING_CHALLENGES.md`](./CODING_CHALLENGES.md):
-- **Reverse an Array in-place** (Two-pointer technique) -> [`ArrayRev.java`](./01-basics/04-arrays/ArrayRev.java)
-- **Find Max & Min element in Array** -> [`BiggestEleArray.java`](./01-basics/04-arrays/BiggestEleArray.java)
-- **Bubble Sort Array** -> [`SortArrayInAscending.java`](./01-basics/04-arrays/SortArrayInAscending.java)
-- **Optimized Primality Test** -> [`Prime.java`](./01-basics/05-math-and-number-programs/Prime.java)
-- **Palindrome Number Check** -> [`PalindromeNum.java`](./01-basics/05-math-and-number-programs/PalindromeNum.java)
-- **Armstrong (Narcissistic) Number Check** -> [`ArmstrongNum.java`](./01-basics/05-math-and-number-programs/ArmstrongNum.java)
-- **Factorial (Iterative & Recursive)** -> [`Factorial.java`](./01-basics/05-math-and-number-programs/Factorial.java)
+- **Reverse an Array in-place** -> [`ArrayRev.java`](./01-java-basics/step-07-arrays-and-data-structures/ArrayRev.java)
+- **Find Max & Min element in Array** -> [`BiggestEleArray.java`](./01-java-basics/step-07-arrays-and-data-structures/BiggestEleArray.java)
+- **Bubble Sort Array** -> [`SortArrayInAscending.java`](./01-java-basics/step-07-arrays-and-data-structures/SortArrayInAscending.java)
+- **Optimized Primality Test** -> [`Prime.java`](./01-java-basics/step-08-math-and-logical-programs/Prime.java)
+- **Palindrome Number Check** -> [`PalindromeNum.java`](./01-java-basics/step-08-math-and-logical-programs/PalindromeNum.java)
+- **Armstrong (Narcissistic) Number Check** -> [`ArmstrongNum.java`](./01-java-basics/step-08-math-and-logical-programs/ArmstrongNum.java)
+- **Factorial (Iterative & Recursive)** -> [`Factorial.java`](./01-java-basics/step-08-math-and-logical-programs/Factorial.java)
 
 ---
 
-## 🚀 7. How to Run the Programs
+## 🚀 6. How to Run the Programs
 
 ### Command Line (CLI)
 
-1. Open your terminal or Command Prompt and navigate to the project directory:
+1. Open terminal and navigate to target step:
    ```bash
-   cd "d:/Arghya/Codes/VS Code/Java/Basic Practice Programs in Java"
+   cd "01-java-basics/step-01-introduction-and-syntax"
    ```
 
-2. Compile any target `.java` program using `javac`:
+2. Compile:
    ```bash
-   javac 01-basics/01-fundamentals/HelloWorldAndJVM.java
+   javac HelloWorldAndJVM.java
    ```
 
-3. Run the compiled byte-code using `java`:
+3. Run:
    ```bash
-   java -cp 01-basics/01-fundamentals HelloWorldAndJVM
+   java HelloWorldAndJVM
    ```
-
-4. Or run directly using Java 11+ single-file execution:
-   ```bash
-   java 01-basics/01-fundamentals/HelloWorldAndJVM.java
-   ```
-
-### VS Code
-1. Install the **Extension Pack for Java** in VS Code.
-2. Open any `.java` file.
-3. Click the **Run** button above `public static void main(String[] args)` or press `Ctrl + F5`.
 
 ---
 
