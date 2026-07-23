@@ -1,8 +1,8 @@
 /**
- * 02-object-oriented-programming: 01_ClassAndObject.java
+ * 02-object-oriented-programming: ClassAndObjectDemo.java
  * ========================================================
- * 💡 What is a Class & Object? (Class 10 Beginner Explanation)
- * -----------------------------------------------------------
+ * 💡 What is a Class & Object? (Beginner Friendly Guide)
+ * ------------------------------------------------------
  * - Class: A BLUEPRINT or design (like a blueprint sketch of a house or car).
  * - Object: The REAL THING built from that blueprint (like a real red sports car parked outside).
  */
@@ -25,10 +25,10 @@ class Car {
     }
 }
 
-public class 01_ClassAndObject {
+public class ClassAndObjectDemo {
     public static void main(String[] args) {
         System.out.println("=========================================");
-        System.out.println("  Class & Object Demo (Class 10 Guide)   ");
+        System.out.println("      Class & Object Beginner Demo       ");
         System.out.println("=========================================");
 
         // Step 2: Create Object #1 from the Car Blueprint

@@ -2,17 +2,17 @@
 
 [![Java](https://img.shields.io/badge/Java-8%20%7C%2011%20%7C%2017%20%7C%2021-orange.svg?style=for-the-badge&logo=openjdk)](https://www.oracle.com/java/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
-[![Class 10 Beginner Friendly](https://img.shields.io/badge/Class_10-Beginner_Friendly-brightgreen.svg?style=for-the-badge)](./CLASS10_JAVA_GUIDE.md)
+[![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-brightgreen.svg?style=for-the-badge)](./BEGINNER_JAVA_GUIDE.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-green.svg?style=for-the-badge)](https://github.com/Arghya876/Basic-Practice-Programs-in-Java/pulls)
 
 Welcome to the **Ultimate Java Core Roadmap & Practice Repository** (`Java-Core-Roadmap-and-Practice`)!
 
-Designed to take you from an **absolute beginner (Class 10 school student level)** all the way to **Advanced Java Core**, complete with **Real-World Analogies**, **Mermaid Architecture Diagrams**, **Interview Q&As**, and **Runnable Code Examples**.
+Designed to take you from a **complete beginner** all the way to **Advanced Java Core**, complete with **Real-World Analogies**, **Mermaid Architecture Diagrams**, **Interview Q&As**, and **Runnable Code Examples**.
 
 ---
 
 ## 🎒 New to Coding? Start Here!
-👉 **[Read the Class 10 Beginner-Friendly Java Handbook](./CLASS10_JAVA_GUIDE.md)** for easy real-world analogies (Variables as lunchboxes, Loops as running laps, Objects as cars!).
+👉 **[Read the Ultimate Beginner-Friendly Java Handbook](./BEGINNER_JAVA_GUIDE.md)** for easy real-world analogies (Variables as lunchboxes, Loops as running laps, Objects as cars!).
 
 ---
 

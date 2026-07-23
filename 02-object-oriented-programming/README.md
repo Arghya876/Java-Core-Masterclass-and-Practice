@@ -4,7 +4,7 @@ Welcome to **Phase 2**! In this module, you will learn how real-world objects li
 
 ---
 
-## 💡 The 4 Pillars of OOPs (Explained like a 10th Grade Science Class!)
+## 💡 The 4 Pillars of OOPs (Beginner Friendly Guide)
 
 ```
                  +-----------------------------------+

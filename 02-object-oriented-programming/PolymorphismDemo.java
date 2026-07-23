@@ -1,8 +1,8 @@
 /**
  * 02-object-oriented-programming: PolymorphismDemo.java
  * =======================================================
- * 💡 What is Polymorphism? (Class 10 Beginner Explanation)
- * --------------------------------------------------------
+ * 💡 What is Polymorphism? (Beginner Friendly Guide)
+ * --------------------------------------------------
  * Poly = Many | Morphism = Forms.
  * Polymorphism allows one method name to perform DIFFERENT actions!
  *

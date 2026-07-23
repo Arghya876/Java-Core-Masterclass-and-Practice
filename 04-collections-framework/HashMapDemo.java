@@ -3,8 +3,8 @@ import java.util.HashMap;
 /**
  * 04-collections-framework: HashMapDemo.java
  * ===========================================
- * 💡 What is a HashMap? (Class 10 Beginner Explanation)
- * ------------------------------------------------------
+ * 💡 What is a HashMap? (Beginner Friendly Guide)
+ * -----------------------------------------------
  * Analogy: Phonebook / Student Roll Call 📞
  * A `HashMap` stores data in **Key-Value Pairs** (`Key -> Value`).
  *

@@ -1,8 +1,8 @@
 /**
  * 02-object-oriented-programming: AbstractionDemo.java
  * ======================================================
- * 💡 What is Abstraction? (Class 10 Beginner Explanation)
- * -------------------------------------------------------
+ * 💡 What is Abstraction? (Beginner Friendly Guide)
+ * -------------------------------------------------
  * Analogy: TV Remote Control 📺
  * When you press the "POWER" button on a TV remote, you only see the result (TV turns ON).
  * You don't need to know the complex circuit board wiring inside!

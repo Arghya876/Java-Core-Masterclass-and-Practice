@@ -1,8 +1,8 @@
 /**
  * 06-multithreading-and-concurrency: ThreadBasicsDemo.java
  * ========================================================
- * 💡 What is Multithreading? (Class 10 Beginner Explanation)
- * -----------------------------------------------------------
+ * 💡 What is Multithreading? (Beginner Friendly Guide)
+ * -----------------------------------------------------
  * Analogy: Multitasking in Real Life 🎧📝
  * Imagine listening to music on your phone while writing your homework!
  * Two tasks happening concurrently at the exact same time.

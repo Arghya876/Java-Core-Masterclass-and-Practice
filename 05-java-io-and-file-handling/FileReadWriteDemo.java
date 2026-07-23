@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * 05-java-io-and-file-handling: FileReadWriteDemo.java
  * ====================================================
- * 💡 File Handling Made Easy (Class 10 Beginner Guide)
+ * 💡 File Handling Made Easy (Beginner Friendly Guide)
  * ---------------------------------------------------
  * Analogy: School Notebook 📓
  * - Writing to File: Writing notes with a pen (`FileWriter`).

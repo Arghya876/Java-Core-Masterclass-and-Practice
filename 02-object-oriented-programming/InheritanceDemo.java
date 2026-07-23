@@ -1,8 +1,8 @@
 /**
  * 02-object-oriented-programming: InheritanceDemo.java
  * ======================================================
- * 💡 What is Inheritance? (Class 10 Beginner Explanation)
- * --------------------------------------------------------
+ * 💡 What is Inheritance? (Beginner Friendly Guide)
+ * --------------------------------------------------
  * Analogy: Parent & Child 👨‍👦
  * Just like a child inherits traits (eye color, surname) from parents,
  * a Child Class (Subclass) inherits fields & methods from a Parent Class (Superclass) using `extends`.

@@ -1,8 +1,8 @@
 /**
  * 02-object-oriented-programming: EncapsulationDemo.java
  * ========================================================
- * 💡 What is Encapsulation? (Class 10 Beginner Explanation)
- * ---------------------------------------------------------
+ * 💡 What is Encapsulation? (Beginner Friendly Guide)
+ * ---------------------------------------------------
  * Analogy: A Capsule / Medicine Pill 💊
  * Encapsulation means bundling variables (data) and methods (actions) inside a single class,
  * and hiding variables by making them `private`.
@@ -78,7 +78,6 @@ public class EncapsulationDemo {
         // Trying to withdraw more money than available
         acc.withdraw(1000.0);
 
-        // Notice: acc.balance = 99999; <-- This will cause a COMPILE ERROR! Data is protected!
         System.out.println("=========================================");
     }
 }

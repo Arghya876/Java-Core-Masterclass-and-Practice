@@ -1,7 +1,7 @@
 /**
  * 03-strings-and-exception-handling: StringBasicsDemo.java
  * ==========================================================
- * 💡 Mastering Java Strings (Class 10 Beginner Guide)
+ * 💡 Mastering Java Strings (Beginner Friendly Guide)
  * ----------------------------------------------------
  * A `String` is a sequence of text characters inside double quotes `"Hello"`.
  *

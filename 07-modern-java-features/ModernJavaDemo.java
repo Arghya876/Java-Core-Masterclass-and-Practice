@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * 07-modern-java-features: ModernJavaDemo.java
  * ============================================
- * 💡 What are Modern Java Features? (Class 10 Beginner Guide)
+ * 💡 What are Modern Java Features? (Beginner Friendly Guide)
  * -----------------------------------------------------------
  * Java has introduced awesome shortcuts:
  * 1. Lambda Expressions `(x -> x * 2)`: Compact function syntax.

@@ -1,8 +1,8 @@
 /**
  * 03-strings-and-exception-handling: ExceptionHandlingDemo.java
  * ===============================================================
- * 💡 What is Exception Handling? (Class 10 Beginner Explanation)
- * ---------------------------------------------------------------
+ * 💡 What is Exception Handling? (Beginner Friendly Guide)
+ * --------------------------------------------------------
  * Analogy: Wearing a Bicycle Helmet ⛑️
  * An "Exception" is a runtime crash (like dividing 10 by 0 or accessing array element -1).
  * Instead of letting the program crash abruptly, we wrap risky code in a `try-catch` block

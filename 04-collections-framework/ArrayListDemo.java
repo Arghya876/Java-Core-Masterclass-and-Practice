@@ -3,8 +3,8 @@ import java.util.ArrayList;
 /**
  * 04-collections-framework: ArrayListDemo.java
  * =============================================
- * 💡 What is an ArrayList? (Class 10 Beginner Explanation)
- * ---------------------------------------------------------
+ * 💡 What is an ArrayList? (Beginner Friendly Guide)
+ * --------------------------------------------------
  * Analogy: Dynamic Grocery Shopping List 🛒
  * Regular arrays have a fixed size (`int[] arr = new int[5]`).
  * An `ArrayList` grows and shrinks automatically as you add or remove items!
