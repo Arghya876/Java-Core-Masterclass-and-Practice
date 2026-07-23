@@ -1,6 +1,6 @@
 # ❓ Core Java Interview Q&A Guide (Campus Placements & Technical Interviews)
 
-This document is a comprehensive, production-grade collection of **Core Java Technical Interview Questions & Answers**, tailored for college students, software engineers, and job seekers preparing for campus recruitment, service, and product-based company interviews (FAANG, Tier-1 Tech).
+This document is a production-grade collection of **Core Java Technical Interview Questions & Answers**, tailored for college students, software engineers, and job seekers preparing for campus recruitment, service, and product-based company interviews (FAANG, Tier-1 Tech).
 
 ---
 
@@ -17,10 +17,10 @@ This document is a comprehensive, production-grade collection of **Core Java Tec
 
 ## 1. Java Architecture & Memory Model
 
-### Q1: Why is Java platform-independent, but JVM is platform-dependent?
+### Q1: Why is Java platform-independent, but the JVM platform-dependent?
 **Answer**: 
 - **Java Compiler (`javac`)**: Converts source code `.java` into universal, OS-agnostic **Bytecode (`.class`)**.
-- **JVM**: Translates bytecode into host CPU machine instructions. Because Windows, Linux, and macOS have different operating systems and CPU architectures, each OS has its own platform-specific JVM implementation.
+- **JVM (Java Virtual Machine)**: Translates bytecode into host CPU machine instructions. Because Windows, Linux, and macOS have different operating systems and CPU architectures, each OS requires its own platform-specific JVM implementation.
 
 ### Q2: Explain the JVM Memory Structure (Heap, Stack, Metaspace, PC Register, Native Stack).
 **Answer**:
@@ -39,7 +39,7 @@ flowchart TD
         end
         subgraph ThreadPrivate ["Per-Thread Private Memory"]
             Stack["Java Thread Stack\n(Local Vars & Frames)"]
-            PC["PC Register\n(Current Instruction)"]
+            PC["PC Register\n(Current Instruction Pointer)"]
             Native["Native Stack"]
         end
     end
@@ -63,9 +63,9 @@ Garbage Collection automatically reclaims heap memory occupied by unreachable ob
 1. **Encapsulation**: Bundling fields and methods inside a class, hiding private fields (`private balance`), providing getters/setters (Bank Account).
 2. **Inheritance**: Subclass inheriting fields & methods from Superclass (`Dog extends Animal`) using `extends`.
 3. **Polymorphism**: Ability to take multiple forms:
-   - *Compile-time*: Method Overloading (same name, different params).
+   - *Compile-time*: Method Overloading (same method name, different parameters).
    - *Runtime*: Method Overriding (`@Override` method in subclass).
-4. **Abstraction**: Hiding internal implementation details and showing only necessary interface buttons (TV Remote, Driving a Car).
+4. **Abstraction**: Hiding internal implementation details and showing only necessary interface controls (TV Remote, Driving a Car).
 
 ### Q5: What is the difference between Abstract Class and Interface in Java 8+?
 **Answer**:
@@ -74,7 +74,7 @@ Garbage Collection automatically reclaims heap memory occupied by unreachable ob
 | :--- | :--- | :--- |
 | **Multiple Inheritance** | Classes cannot extend multiple abstract classes | A class can implement multiple interfaces |
 | **Instance Variables** | Can have non-final, non-static instance fields | Fields are implicitly `public static final` constants |
-| **Methods** | Can have abstract & concrete methods | Abstract methods, `default` methods, and `static` methods |
+| **Methods** | Abstract & concrete methods | Abstract, `default`, and `static` methods |
 | **Constructors** | Can have constructors | Cannot have constructors |
 | **Keyword** | `extends` | `implements` |
 
@@ -188,5 +188,5 @@ A Deadlock occurs when Thread 1 holds Lock A and waits for Lock B, while Thread 
 
 ### Q17: What are Virtual Threads in Java 21 (Project Loom)?
 **Answer**:
-Traditional Java threads map 1-to-1 with OS threads (heavyweight, expensive memory footprint ~1MB).
+Traditional Java threads map 1-to-1 with OS threads (heavyweight, ~1MB stack size).
 **Virtual Threads** are lightweight threads managed entirely by the JVM (OS thread independent). Millions of virtual threads can run concurrently with negligible memory footprint, revolutionizing high-throughput I/O bound applications!
