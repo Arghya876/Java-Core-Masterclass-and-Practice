@@ -1,201 +1,192 @@
-# ❓ Top Core Java Interview Questions & Detailed Answers
+# ❓ Core Java Interview Q&A Guide (Campus Placements & Technical Interviews)
 
-This document provides a comprehensive, expert-curated collection of the most frequently asked **Core Java Interview Questions** ranging from fundamental concepts to memory management and internals.
+This document is a comprehensive, production-grade collection of **Core Java Technical Interview Questions & Answers**, tailored for college students, software engineers, and job seekers preparing for campus recruitment, service, and product-based company interviews (FAANG, Tier-1 Tech).
 
 ---
 
 ## 📋 Table of Contents
-1. [Architecture & Platform Independence](#1-architecture--platform-independence)
-2. [Data Types, Variables & Memory Management](#2-data-types-variables--memory-management)
-3. [Strings & Memory Optimization](#3-strings--memory-optimization)
-4. [Methods, Parameters & Pass-by-Value](#4-methods-parameters--pass-by-value)
-5. [Control Flow & Exceptions](#5-control-flow--exceptions)
-6. [Keywords: static, final, super, this](#6-keywords-static-final-super-this)
+1. [Java Architecture & Memory Model](#1-java-architecture--memory-model)
+2. [Object-Oriented Programming (OOPs)](#2-object-oriented-programming-oops)
+3. [String Pool & Immutability](#3-string-pool--immutability)
+4. [Exception Handling & Memory Leaks](#4-exception-handling--memory-leaks)
+5. [Java Collections Framework & Internals](#5-java-collections-framework--internals)
+6. [Multithreading, Concurrency & Synchronization](#6-multithreading-concurrency--synchronization)
+7. [Modern Java (Java 8 - 21+)](#7-modern-java-java-8---21)
 
 ---
 
-## 1. Architecture & Platform Independence
+## 1. Java Architecture & Memory Model
 
-### Q1: Why is Java called a "Platform-Independent" language, while JVM is platform-dependent?
+### Q1: Why is Java platform-independent, but JVM is platform-dependent?
 **Answer**: 
-- **Java Platform Independence**: When Java code is compiled using `javac`, it is not converted into machine-specific native code. Instead, it is compiled into an intermediate byte-level representation called **Bytecode (`.class` file)**. Bytecode is universal and independent of OS hardware.
-- **JVM Platform Dependence**: The **JVM (Java Virtual Machine)** reads bytecode and translates it into native CPU machine instructions. Because Windows, macOS, Linux, and ARM/x86 architectures have different instruction sets, each operating system requires a custom JVM built specifically for that platform. Thus, JVM is platform-dependent.
+- **Java Compiler (`javac`)**: Converts source code `.java` into universal, OS-agnostic **Bytecode (`.class`)**.
+- **JVM**: Translates bytecode into host CPU machine instructions. Because Windows, Linux, and macOS have different operating systems and CPU architectures, each OS has its own platform-specific JVM implementation.
+
+### Q2: Explain the JVM Memory Structure (Heap, Stack, Metaspace, PC Register, Native Stack).
+**Answer**:
+1. **Heap Area**: Stores all objects created via `new` keyword and instance variables. Shared across all threads, managed by Garbage Collector.
+2. **Stack Area**: Stores method call frames, local variables, primitives, and reference pointers to objects on Heap. Private to each thread.
+3. **Metaspace (Replaced PermGen in Java 8)**: Stores class metadata, bytecode instructions, static methods, and static variables. Allocated in native memory.
+4. **PC (Program Counter) Register**: Keeps track of the current executing bytecode instruction address for each active thread.
+5. **Native Method Stack**: Executes native C/C++ code via JNI (Java Native Interface).
+
+```mermaid
+flowchart TD
+    subgraph JVM ["JVM Memory Model"]
+        subgraph ThreadShared ["Shared Across Threads"]
+            Heap["Heap Memory\n(Young & Old Generation Objects)"]
+            Metaspace["Metaspace\n(Class Metadata & Static Variables)"]
+        end
+        subgraph ThreadPrivate ["Per-Thread Private Memory"]
+            Stack["Java Thread Stack\n(Local Vars & Frames)"]
+            PC["PC Register\n(Current Instruction)"]
+            Native["Native Stack"]
+        end
+    end
+```
+
+### Q3: How does Garbage Collection (GC) work in Java?
+**Answer**:
+Garbage Collection automatically reclaims heap memory occupied by unreachable objects (objects no longer referenced by any active thread stack).
+- **Mark Phase**: Identifies all live referenced objects starting from GC Roots.
+- **Sweep Phase**: Reclaims memory of unreferenced unreachable objects.
+- **Generational GC Model**:
+  - **Young Generation (Eden, Survivor S0, S1)**: Short-lived objects. Fast Minor GC.
+  - **Old / Tenured Generation**: Objects surviving multiple GC cycles. Major / Full GC.
+
+---
+
+## 2. Object-Oriented Programming (OOPs)
+
+### Q4: Explain the 4 Pillars of OOPs with real-world examples.
+**Answer**:
+1. **Encapsulation**: Bundling fields and methods inside a class, hiding private fields (`private balance`), providing getters/setters (Bank Account).
+2. **Inheritance**: Subclass inheriting fields & methods from Superclass (`Dog extends Animal`) using `extends`.
+3. **Polymorphism**: Ability to take multiple forms:
+   - *Compile-time*: Method Overloading (same name, different params).
+   - *Runtime*: Method Overriding (`@Override` method in subclass).
+4. **Abstraction**: Hiding internal implementation details and showing only necessary interface buttons (TV Remote, Driving a Car).
+
+### Q5: What is the difference between Abstract Class and Interface in Java 8+?
+**Answer**:
+
+| Feature | Abstract Class | Interface (Java 8+) |
+| :--- | :--- | :--- |
+| **Multiple Inheritance** | Classes cannot extend multiple abstract classes | A class can implement multiple interfaces |
+| **Instance Variables** | Can have non-final, non-static instance fields | Fields are implicitly `public static final` constants |
+| **Methods** | Can have abstract & concrete methods | Abstract methods, `default` methods, and `static` methods |
+| **Constructors** | Can have constructors | Cannot have constructors |
+| **Keyword** | `extends` | `implements` |
+
+### Q6: What is the Diamond Problem and how is it resolved in Java?
+**Answer**:
+When Class C inherits from Class A and Class B, and both A and B have a method `foo()`, compiler cannot determine which `foo()` to execute.
+- Java disallows multiple class inheritance (`class C extends A, B` ❌).
+- In Java 8+ interfaces with `default` methods, if a class implements two interfaces with colliding default methods, the compiler requires the class to explicitly `@Override` the method and resolve the collision: `InterfaceA.super.foo();`.
+
+---
+
+## 3. String Pool & Immutability
+
+### Q7: Why are Strings Immutable in Java?
+**Answer**:
+1. **String Constant Pool (SCP) Optimization**: Multiple literal references share the same memory location.
+2. **Security**: Strings store database credentials, URLs, and network sockets; immutability prevents unauthorized mutation.
+3. **Thread Safety**: Immutable strings can be shared across multiple concurrent threads without locks.
+4. **HashCode Caching**: `hashCode` is calculated once and cached for fast `HashMap` lookups.
+
+### Q8: Compare `String`, `StringBuilder`, and `StringBuffer`.
+**Answer**:
+
+| Feature | `String` | `StringBuilder` | `StringBuffer` |
+| :--- | :--- | :--- | :--- |
+| **Mutability** | Immutable | Mutable | Mutable |
+| **Thread Safety** | Thread-safe (Immutable) | **Not Thread-safe** (Fastest) | **Thread-safe** (Synchronized) |
+| **Performance** | Slow for concatenations | **Fastest** for loops | Slower due to synchronization overhead |
+| **Storage** | String Pool / Heap | Heap Buffer | Heap Buffer |
+
+---
+
+## 4. Exception Handling & Memory Leaks
+
+### Q9: Difference between Checked Exception, Unchecked Exception, and Error.
+**Answer**:
+- **Checked Exception**: Subclass of `Exception` (excluding RuntimeException). Checked at compile-time by `javac`. Must be handled (`try-catch` or `throws`). Example: `IOException`, `SQLException`.
+- **Unchecked Exception**: Subclass of `RuntimeException`. Occurs at runtime. Compiler does not force handling. Example: `NullPointerException`, `ArithmeticException`.
+- **Error**: Irrecoverable system conditions. Should not be caught. Example: `OutOfMemoryError`, `StackOverflowError`.
+
+### Q10: What causes a Memory Leak in Java if it has Garbage Collection?
+**Answer**:
+A memory leak occurs when unneeded objects remain referenced by active GC Roots, preventing the Garbage Collector from reclaiming their memory.
+**Common Causes**:
+1. Static references holding onto large objects.
+2. Unclosed resource streams (`InputStream`, `Connection`, `Scanner`).
+3. Overriding `equals()` without overriding `hashCode()` in custom HashMap keys.
+4. Unregistered event listeners or thread-local variables.
+
+---
+
+## 5. Java Collections Framework & Internals
+
+### Q11: How does `HashMap` work internally in Java 8?
+**Answer**:
+`HashMap` stores data in an array of Buckets (`Node<K,V>[] table`).
+1. **Index Calculation**: `hash = key.hashCode()`, `index = hash & (n - 1)`.
+2. **Collision Handling**: If two keys hash to the same bucket index:
+   - Stored as a **Singly Linked List**.
+   - **Java 8 Optimization (Treeification)**: If bucket collision count exceeds 8 (`TREEIFY_THRESHOLD = 8`) and total capacity $\ge 64$, the LinkedList is converted into a **Red-Black Tree**, reducing lookup time from $O(N)$ to $O(\log N)$!
 
 ```mermaid
 flowchart LR
-    A["Java Code (.java)"] -->|"javac Compiler"| B["Universal Bytecode (.class)"]
-    B --> C["JVM for Windows"]
-    B --> D["JVM for Linux"]
-    B --> E["JVM for macOS"]
-    C --> F["Windows x64 Native Machine Code"]
-    D --> G["Linux ELF Native Machine Code"]
-    E --> H["macOS ARM/Mach-O Native Code"]
+    Key["Key.hashCode()"] --> Index["Bucket Index = hash & (n-1)"]
+    Index --> BucketArray["Bucket Array Node[]"]
+    BucketArray -->|"Collision <= 8"| LinkedList["Singly Linked List O(N)"]
+    BucketArray -->|"Collision > 8"| RedBlackTree["Balanced Red-Black Tree O(log N)"]
 ```
 
----
-
-### Q2: Explain the exact breakdown of `public static void main(String[] args)` signature.
-**Answer**:
-- `public`: Access modifier allowing the JVM to invoke `main()` from anywhere outside the package.
-- `static`: Enables the JVM to call `main()` without creating an instance/object of the class first (`ClassName.main()`), saving heap memory before program startup.
-- `void`: Return type indicating `main()` does not return any value back to the caller (JVM).
-- `main`: Name of the default entry point method recognized by JVM specs.
-- `String[] args`: Command-line arguments passed to the program as an array of `String` objects.
-
----
-
-## 2. Data Types, Variables & Memory Management
-
-### Q3: What is the difference between Primitive Data Types and Wrapper Classes?
+### Q12: Difference between `ArrayList` and `LinkedList`.
 **Answer**:
 
-| Feature | Primitive Types (`int`, `double`, `boolean`) | Wrapper Classes (`Integer`, `Double`, `Boolean`) |
+| Operation / Feature | `ArrayList` | `LinkedList` |
 | :--- | :--- | :--- |
-| **Definition** | Predefined basic data types stored directly on stack memory | Objects holding primitive values inside `java.lang` package |
-| **Memory Allocation** | Allocated on Stack (fast, contiguous memory) | Allocated on Heap as Objects (overhead of object header) |
-| **Nullability** | Cannot be `null` (has default value e.g., `0`, `false`) | Can be `null` |
-| **Collections Support** | Cannot be used in Java Collections (`List<int>` ❌) | Required in Java Collections (`List<Integer>` ✅) |
-| **Methods Support** | No methods available | Contains utility methods (`Integer.parseInt()`, `Double.valueOf()`) |
+| **Internal Structure** | Resizable Dynamic Array | Doubly Linked List |
+| **Get by Index `get(i)`** | **$O(1)$** (Direct pointer arithmetic) | $O(N)$ (Sequential traversal) |
+| **Add / Delete at Ends** | $O(1)$ amortized | **$O(1)$** |
+| **Insert / Delete Middle** | $O(N)$ (Array shifting required) | $O(N)$ to find + $O(1)$ pointer change |
+| **Memory Overhead** | Low (contiguous array) | High (next/prev node pointers) |
+
+### Q13: Difference between `Comparable` and `Comparator`.
+**Answer**:
+- `Comparable`: Defines natural sorting order for a class. Single method `compareTo(T o)`. Implemented inside domain class (`class Student implements Comparable<Student>`).
+- `Comparator`: Defines custom/multiple sorting rules outside domain class. Method `compare(T o1, T o2)`. Passed as argument to `Collections.sort(list, comparator)`.
 
 ---
 
-### Q4: Explain Autoboxing and Unboxing with code examples.
+## 6. Multithreading, Concurrency & Synchronization
+
+### Q14: Difference between `volatile` and `synchronized`.
 **Answer**:
-- **Autoboxing**: Automatic conversion of primitive data types into their corresponding Wrapper Objects by the Java compiler.
-- **Unboxing**: Automatic conversion of Wrapper Objects back into their primitive values.
+- `volatile`: Ensures **Visibility** across CPU thread caches by forcing reads/writes directly to main memory (JMM). Does NOT ensure atomicity for compound operations like `count++`.
+- `synchronized`: Ensures both **Visibility** AND **Atomicity** (Mutual Exclusion) by acquiring intrinsic monitor lock.
 
-```java
-// Autoboxing example
-int primInt = 50;
-Integer wrappedInt = primInt; // Compiler transforms to: Integer.valueOf(primInt)
-
-// Unboxing example
-Integer objVal = 100;
-int rawInt = objVal; // Compiler transforms to: objVal.intValue()
-```
+### Q15: What is a Deadlock? How to prevent it?
+**Answer**:
+A Deadlock occurs when Thread 1 holds Lock A and waits for Lock B, while Thread 2 holds Lock B and waits for Lock A. Both threads block indefinitely.
+**Prevention Strategies**:
+1. Acquire locks in a strict, uniform global order.
+2. Use timed lock attempts (`ReentrantLock.tryLock(timeout)`).
+3. Avoid nesting locks.
 
 ---
 
-## 3. Strings & Memory Optimization
+## 7. Modern Java (Java 8 - 21+)
 
-### Q5: Why are Strings immutable in Java? What are the benefits?
+### Q16: What is a Lambda Expression and Functional Interface?
 **Answer**:
-Once a `String` object is created in Java, its character content cannot be modified. Any alteration creates a new `String` object in memory.
+- **Functional Interface**: An interface containing exactly one abstract method (annotated with `@FunctionalInterface`). Example: `Runnable`, `Callable`, `Predicate<T>`, `Function<T,R>`, `Consumer<T>`, `Supplier<T>`.
+- **Lambda Expression**: An anonymous function providing inline implementation for a functional interface: `(param) -> expression`.
 
-**Key Reasons & Benefits**:
-1. **String Constant Pool (SCP) Optimization**: Shared memory storage. Multiple string literals with identical content point to the same memory reference.
-2. **Security**: Strings are heavily used in database URLs, usernames, passwords, socket addresses, and class loading (`Class.forName()`). Immutability prevents malicious tampering.
-3. **Thread Safety**: Immutable objects are inherently thread-safe and can be shared freely across multiple threads without synchronization locks.
-4. **Caching HashCode**: The `hashCode()` of a String is calculated once and cached (`hash` field). This makes String lookups in `HashMap` extremely fast.
-
-```mermaid
-flowchart TD
-    subgraph Stack ["Stack Memory"]
-        s1["str1"]
-        s2["str2"]
-        s3["str3"]
-    end
-    
-    subgraph Heap ["Heap Memory"]
-        subgraph SCP ["String Constant Pool (SCP)"]
-            poolObj["'Java' (Address: 0x101)"]
-        end
-        heapObj["'Java' (Address: 0x909 via new String())"]
-    end
-    
-    s1 -->|"String str1 = 'Java'"| poolObj
-    s2 -->|"String str2 = 'Java'"| poolObj
-    s3 -->|"String str3 = new String('Java')"| heapObj
-```
-
----
-
-### Q6: What is the difference between `==` operator and `.equals()` method?
+### Q17: What are Virtual Threads in Java 21 (Project Loom)?
 **Answer**:
-- `==` Operator: Compares **memory reference addresses** (checks if both variables point to the exact same object in memory).
-- `.equals()` Method: Compares the **actual content/state** inside objects (overridden in `String`, `Integer`, etc. to compare values).
-
-```java
-String s1 = "Hello";
-String s2 = "Hello";
-String s3 = new String("Hello");
-
-System.out.println(s1 == s2);      // true  (Both point to same SCP reference)
-System.out.println(s1 == s3);      // false (s3 is a separate Heap object)
-System.out.println(s1.equals(s3)); // true  (Content 'Hello' is identical)
-```
-
----
-
-## 4. Methods, Parameters & Pass-by-Value
-
-### Q7: Is Java Pass-by-Value or Pass-by-Reference? Prove your answer.
-**Answer**:
-Java is **STRICTLY PASS-BY-VALUE**.
-
-- **For Primitives**: A copy of the actual primitive value is passed into the method stack frame. Changes to the parameter inside the method do not affect the caller's variable.
-- **For Objects**: A copy of the **object reference address** is passed. 
-  - Modifying object attributes via the copied reference *mutates the shared object*.
-  - Reassigning the parameter reference to a `new` object does *NOT* change the caller's original reference address.
-
-```mermaid
-flowchart TD
-    subgraph CallerStack ["Caller Stack Frame"]
-        cRef["objRef -> 0x555"]
-    end
-    
-    subgraph MethodStack ["Method Stack Frame (Copy)"]
-        mRef["copiedRef -> 0x555"]
-    end
-    
-    subgraph HeapMemory ["Heap Object"]
-        heapObj["MyClass Object (0x555) \n value: 50 -> 100"]
-    end
-    
-    cRef --> heapObj
-    mRef --> heapObj
-```
-
----
-
-## 5. Control Flow & Exceptions
-
-### Q8: What is the difference between Checked and Unchecked Exceptions?
-**Answer**:
-
-```mermaid
-flowchart TD
-    Throwable["java.lang.Throwable"]
-    Throwable --> Exception["Exception"]
-    Throwable --> Error["Error (OutOfMemoryError, StackOverflowError)"]
-    
-    Exception --> Checked["Checked Exceptions (Compile-Time)\n- IOException\n- SQLException"]
-    Exception --> Unchecked["Unchecked Exceptions (Runtime)\n- ArithmeticException\n- NullPointerException\n- ArrayIndexOutOfBoundsException"]
-```
-
-| Feature | Checked Exception | Unchecked Exception (RuntimeException) |
-| :--- | :--- | :--- |
-| **Detection Time** | Checked at **Compile-Time** by `javac` | Occurs at **Runtime** |
-| **Handling Requirement** | Mandatory (`try-catch` or `throws` declaration) | Optional (Compiler does not force handling) |
-| **Inheritance** | Extends `java.lang.Exception` directly | Extends `java.lang.RuntimeException` |
-| **Examples** | `IOException`, `FileNotFoundException`, `SQLException` | `NullPointerException`, `ArithmeticException`, `IndexOutOfBoundsException` |
-
----
-
-## 6. Keywords: static, final, super, this
-
-### Q9: Differentiate between `final`, `finally`, and `finalize()`.
-**Answer**:
-1. `final` (Keyword): Used to apply restrictions.
-   - `final variable`: Constant value (cannot be reassigned).
-   - `final method`: Cannot be overridden in subclasses.
-   - `final class`: Cannot be inherited (`extends`).
-2. `finally` (Block): Used with `try-catch` for cleanup actions (closing files/connections). Executed regardless of whether an exception is thrown or caught.
-3. `finalize()` (Method): Protected method of `java.lang.Object` invoked by Garbage Collector before an object is reclaimed (deprecated since Java 9).
-
----
-
-### Q10: What is the difference between `static` and `instance` members?
-**Answer**:
-- `static` Members: Belong to the **Class itself**. Allocated memory once when the class is loaded into the JVM Method Area. Shared across all instances of the class.
-- `instance` Members: Belong to **individual objects**. Allocated separate memory on the Heap whenever an object is instantiated using `new`.
+Traditional Java threads map 1-to-1 with OS threads (heavyweight, expensive memory footprint ~1MB).
+**Virtual Threads** are lightweight threads managed entirely by the JVM (OS thread independent). Millions of virtual threads can run concurrently with negligible memory footprint, revolutionizing high-throughput I/O bound applications!

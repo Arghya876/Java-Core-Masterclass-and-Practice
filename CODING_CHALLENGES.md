@@ -1,97 +1,117 @@
-# 💻 Top Java Basic & Core Coding Interview Challenges
+# 💻 Top Solved Java Coding Challenges (Placement & Interview Masterlist)
 
-This document provides a list of essential **Coding Interview Problems** for Java Basics. Master these problems to build a rock-solid foundation for coding assessments and technical interview rounds!
+This document contains **20 Essential Solved Coding Interview Problems** ranging from foundational array/string logic to algorithms, complexity analysis, and solution links!
 
 ---
 
 ## 📋 Table of Contents
-1. [Array & Search Challenges](#1-array--search-challenges)
-2. [Mathematical & Number Logic Challenges](#2-mathematical--number-logic-challenges)
-3. [String & Pattern Challenges](#3-string--pattern-challenges)
+1. [Array & Matrix Challenges](#1-array--matrix-challenges)
+2. [Search & Sort Algorithm Challenges](#2-search--sort-algorithm-challenges)
+3. [Mathematical & Number Logic Challenges](#3-mathematical--number-logic-challenges)
+4. [String & Pattern Challenges](#4-string--pattern-challenges)
+5. [Data Structures & OOP Challenges](#5-data-structures--oop-challenges)
 
 ---
 
-## 1. Array & Search Challenges
+## 1. Array & Matrix Challenges
 
 ### Challenge 1: Reverse an Array in-place (Two-Pointer Technique)
-- **Problem Statement**: Given an array of integers, reverse the array in-place without using extra memory array.
-- **Input**: `[10, 20, 30, 40, 50]`
-- **Output**: `[50, 40, 30, 20, 10]`
-- **Logic Hint**: Use two pointers (`start = 0`, `end = length - 1`). Swap elements at `start` and `end`, then increment `start` and decrement `end` until `start >= end`.
-- **Code Solution**: See [`ArrayRev.java`](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-java-basics/step-07-arrays-and-data-structures/ArrayRev.java)
-
----
+- **Time Complexity**: $O(N)$ | **Space Complexity**: $O(1)$
+- **Input**: `[10, 20, 30, 40, 50]` -> **Output**: `[50, 40, 30, 20, 10]`
+- **Code Solution**: [`ArrayRev.java`](./01-java-basics/step-07-arrays-and-data-structures/ArrayRev.java)
 
 ### Challenge 2: Find Maximum & Minimum Element in an Array
-- **Problem Statement**: Find the largest and smallest element in an integer array in a single traversal ($O(N)$ time).
-- **Input**: `[12, 45, 2, 99, 67, 34]`
-- **Output**: `Max = 99`, `Min = 2`
-- **Logic Hint**: Initialize `max = arr[0]` and `min = arr[0]`. Iterate through array from index 1 to N-1 and update `max` and `min`.
-- **Code Solution**: See [`BiggestEleArray.java`](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-java-basics/step-07-arrays-and-data-structures/BiggestEleArray.java) & [`SmallestEleArray.java`](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-java-basics/step-07-arrays-and-data-structures/SmallestEleArray.java)
+- **Time Complexity**: $O(N)$ | **Space Complexity**: $O(1)$
+- **Input**: `[12, 45, 2, 99, 67]` -> **Output**: `Max = 99`, `Min = 2`
+- **Code Solution**: [`BiggestEleArray.java`](./01-java-basics/step-07-arrays-and-data-structures/BiggestEleArray.java) & [`SmallestEleArray.java`](./01-java-basics/step-07-arrays-and-data-structures/SmallestEleArray.java)
+
+### Challenge 3: Matrix Addition & Transpose
+- **Time Complexity**: $O(R \times C)$ | **Space Complexity**: $O(R \times C)$
+- **Input**: Matrix $A$ (2x3) -> Transpose $A^T$ (3x2)
+- **Code Solution**: [`MatrixOperations.java`](./01-java-basics/step-07-arrays-and-data-structures/MatrixOperations.java)
+
+### Challenge 4: Copy Array Elements
+- **Time Complexity**: $O(N)$ | **Space Complexity**: $O(N)$
+- **Code Solution**: [`CopyArrEle.java`](./01-java-basics/step-07-arrays-and-data-structures/CopyArrEle.java)
 
 ---
 
-### Challenge 3: Sort an Array in Ascending Order (Bubble Sort)
-- **Problem Statement**: Sort an un-sorted array of integers in ascending order using Bubble Sort algorithm.
-- **Input**: `[5, 1, 4, 2, 8]`
-- **Output**: `[1, 2, 4, 5, 8]`
-- **Time Complexity**: $O(N^2)$ worst-case.
-- **Code Solution**: See [`SortArrayInAscending.java`](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-java-basics/step-07-arrays-and-data-structures/SortArrayInAscending.java)
+## 2. Search & Sort Algorithm Challenges
+
+### Challenge 5: Binary Search Algorithm (Iterative & Recursive)
+- **Time Complexity**: **$O(\log N)$** | **Space Complexity**: $O(1)$ Iterative / $O(\log N)$ Recursive
+- **Requirement**: Input array must be sorted!
+- **Code Solution**: [`BinarySearchDemo.java`](./01-java-basics/step-07-arrays-and-data-structures/BinarySearchDemo.java)
+
+### Challenge 6: Bubble Sort (Ascending & Descending Order)
+- **Time Complexity**: $O(N^2)$ worst-case | **Space Complexity**: $O(1)$
+- **Code Solution**: [`SortArrayInAscending.java`](./01-java-basics/step-07-arrays-and-data-structures/SortArrayInAscending.java) & [`SortArrayInDescending.java`](./01-java-basics/step-07-arrays-and-data-structures/SortArrayInDescending.java)
+
+### Challenge 7: Linear Search Algorithm
+- **Time Complexity**: $O(N)$ | **Space Complexity**: $O(1)$
+- **Code Solution**: [`ScearchEleInArr.java`](./01-java-basics/step-07-arrays-and-data-structures/ScearchEleInArr.java)
 
 ---
 
-## 2. Mathematical & Number Logic Challenges
+## 3. Mathematical & Number Logic Challenges
 
-### Challenge 4: Check for Prime Number (Optimized Primality Test)
-- **Problem Statement**: Determine whether a given integer $N > 1$ is a prime number.
-- **Input**: `N = 29` -> **Output**: `True (Prime)`
-- **Input**: `N = 15` -> **Output**: `False (Not Prime)`
-- **Logic Hint**: Instead of checking up to $N-1$, check divisibility up to $\sqrt{N}$. If $N \% i == 0$, then $N$ is composite.
-- **Code Solution**: See [`Prime.java`](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-java-basics/step-08-math-and-logical-programs/Prime.java)
+### Challenge 8: Optimized Primality Test
+- **Time Complexity**: $O(\sqrt{N})$ | **Space Complexity**: $O(1)$
+- **Input**: `29` -> **Output**: `Prime`
+- **Code Solution**: [`Prime.java`](./01-java-basics/step-08-math-and-logical-programs/Prime.java)
 
----
+### Challenge 9: Prime Numbers in a Range
+- **Time Complexity**: $O(N \sqrt{N})$ | **Space Complexity**: $O(1)$
+- **Code Solution**: [`PrimeNumBetweenTwo.java`](./01-java-basics/step-08-math-and-logical-programs/PrimeNumBetweenTwo.java)
 
-### Challenge 5: Check for Palindrome Number
-- **Problem Statement**: Check if an integer reads the same forwards and backwards.
-- **Input**: `12321` -> **Output**: `True (Palindrome)`
-- **Input**: `12345` -> **Output**: `False`
-- **Logic Hint**: Extract last digit using `n % 10`, build reversed number `rev = rev * 10 + digit`, and divide `n /= 10`. Compare `rev` with original `n`.
-- **Code Solution**: See [`PalindromeNum.java`](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-java-basics/step-08-math-and-logical-programs/PalindromeNum.java)
+### Challenge 10: Fibonacci Sequence (Iterative, Recursive, and Memoized DP)
+- **Time Complexity**: Iterative $O(N)$, Naive Recursive $O(2^N)$, Memoized DP $O(N)$
+- **Code Solution**: [`FibonacciSeries.java`](./01-java-basics/step-08-math-and-logical-programs/FibonacciSeries.java)
 
----
+### Challenge 11: Euclidean GCD (HCF) & LCM Calculation
+- **Time Complexity**: $O(\log(\min(a,b)))$ | **Space Complexity**: $O(1)$
+- **Formula**: $LCM(a, b) = \frac{a \times b}{GCD(a, b)}$
+- **Code Solution**: [`GCDandLCM.java`](./01-java-basics/step-08-math-and-logical-programs/GCDandLCM.java)
 
-### Challenge 6: Armstrong Number Check
-- **Problem Statement**: An Armstrong (Narcissistic) number of $D$ digits is equal to the sum of its digits raised to the power $D$.
-- **Input**: `153` ($1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153$) -> **Output**: `True`
-- **Input**: `9474` ($9^4 + 4^4 + 7^4 + 4^4 = 6561 + 256 + 2401 + 256 = 9474$) -> **Output**: `True`
-- **Code Solution**: See [`ArmstrongNum.java`](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-java-basics/step-08-math-and-logical-programs/ArmstrongNum.java)
+### Challenge 12: Palindrome Number Check
+- **Time Complexity**: $O(\log_{10} N)$ | **Space Complexity**: $O(1)$
+- **Input**: `12321` -> **Output**: `Palindrome`
+- **Code Solution**: [`PalindromeNum.java`](./01-java-basics/step-08-math-and-logical-programs/PalindromeNum.java)
 
----
+### Challenge 13: Armstrong Number Check
+- **Time Complexity**: $O(\log_{10} N)$ | **Space Complexity**: $O(1)$
+- **Input**: `153` ($1^3 + 5^3 + 3^3 = 153$) -> **Output**: `Armstrong`
+- **Code Solution**: [`ArmstrongNum.java`](./01-java-basics/step-08-math-and-logical-programs/ArmstrongNum.java)
 
-### Challenge 7: Factorial of a Number (Iterative & Recursive)
-- **Problem Statement**: Calculate $N! = N \times (N-1) \times \dots \times 1$.
-- **Input**: `N = 5` -> **Output**: `120`
-- **Code Solution**: See [`Factorial.java`](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-java-basics/step-08-math-and-logical-programs/Factorial.java) & [`MethodBasics.java`](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-java-basics/step-09-methods-and-recursion/MethodBasics.java)
+### Challenge 14: Perfect Number Check
+- **Time Complexity**: $O(\sqrt{N})$ | **Space Complexity**: $O(1)$
+- **Input**: `6` ($1 + 2 + 3 = 6$) -> **Output**: `Perfect Number`
+- **Code Solution**: [`PerfectNum.java`](./01-java-basics/step-08-math-and-logical-programs/PerfectNum.java)
 
----
-
-## 3. String & Pattern Challenges
-
-### Challenge 8: Count Digits and Sum of Digits
-- **Problem Statement**: Calculate the total number of digits and their sum for any integer.
-- **Input**: `N = 4567`
-- **Output**: `Count = 4`, `Sum = 22`
-- **Code Solution**: See [`CountDigits.java`](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-java-basics/step-08-math-and-logical-programs/CountDigits.java) & [`SumDigit.java`](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-java-basics/step-08-math-and-logical-programs/SumDigit.java)
+### Challenge 15: Factorial & Power Calculation
+- **Time Complexity**: $O(N)$
+- **Code Solution**: [`Factorial.java`](./01-java-basics/step-08-math-and-logical-programs/Factorial.java) & [`Power.java`](./01-java-basics/step-08-math-and-logical-programs/Power.java)
 
 ---
 
-### Challenge 9: Vowel or Consonant Classifier
-- **Problem Statement**: Classify an input character as Vowel, Consonant, or Non-alphabet character using `switch-case`.
-- **Input**: `'e'` -> **Output**: `Vowel`
-- **Code Solution**: See [`VowelConsonant.java`](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-java-basics/step-05-decision-making-conditionals/VowelConsonant.java)
+## 4. String & Pattern Challenges
+
+### Challenge 16: Count Digits and Digit Sum
+- **Time Complexity**: $O(\log_{10} N)$
+- **Code Solution**: [`CountDigits.java`](./01-java-basics/step-08-math-and-logical-programs/CountDigits.java) & [`SumDigit.java`](./01-java-basics/step-08-math-and-logical-programs/SumDigit.java)
+
+### Challenge 17: Character Vowel / Consonant Classification
+- **Code Solution**: [`VowelConsonant.java`](./01-java-basics/step-05-decision-making-conditionals/VowelConsonant.java)
+
+### Challenge 18: String Operations & Substring Extraction
+- **Code Solution**: [`StringBasicsDemo.java`](./03-exception-handling/StringBasicsDemo.java)
 
 ---
 
-### Challenge 10: Multi-Tier Income Tax Calculator
-- **Problem Statement**: Compute tax payable based on income brackets using conditional logic (`if-else if`).
-- **Code Solution**: See [`TaxCal.java`](file:///d:/Arghya/Codes/VS%20Code/Java/Basic%20Practice%20Programs%20in%20Java/01-java-basics/step-05-decision-making-conditionals/TaxCal.java)
+## 5. Data Structures & OOP Challenges
+
+### Challenge 19: Dynamic ArrayList & HashMap Operations
+- **Code Solution**: [`ArrayListDemo.java`](./04-collections-framework/ArrayListDemo.java) & [`HashMapDemo.java`](./04-collections-framework/HashMapDemo.java)
+
+### Challenge 20: Encapsulation Bank Account Protection
+- **Code Solution**: [`EncapsulationDemo.java`](./02-object-oriented-programming/EncapsulationDemo.java)
