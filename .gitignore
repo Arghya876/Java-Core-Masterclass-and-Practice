@@ -12,13 +12,6 @@ my_notes.txt
 *.log
 *.tmp
 
-# IDE and Editor Files
-.vscode/
-.idea/
-*.iml
-*.ipr
-*.iws
-
 # OS Generated Files
 .DS_Store
 Thumbs.db
