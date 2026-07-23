@@ -5,9 +5,27 @@
 [![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-brightgreen.svg?style=for-the-badge)](./BEGINNER_JAVA_GUIDE.md)
 [![Campus Placement Ready](https://img.shields.io/badge/Campus_Placements-FAANG_Ready-purple.svg?style=for-the-badge)](./INTERVIEW_QA.md)
 
-Welcome to the **Ultimate Java Core Masterclass & Practice Repository** (`Java-Core-Masterclass-and-Practice`)!
+[![Author](https://img.shields.io/badge/Author-Arghya876-181717.svg?style=for-the-badge&logo=github)](https://github.com/Arghya876)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Arghya-0A66C2.svg?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/arghya876)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Arghya.tech-FF5722.svg?style=for-the-badge&logo=google-chrome)](https://arghya.tech)
+[![Instagram](https://img.shields.io/badge/Instagram-Arghya876-E4405F.svg?style=for-the-badge&logo=instagram)](https://instagram.com/arghya876)
+[![Facebook](https://img.shields.io/badge/Facebook-Arghya876-1877F2.svg?style=for-the-badge&logo=facebook)](https://facebook.com/arghya876)
+
+Welcome to the **Ultimate Java Core Masterclass & Practice Repository** (`Java-Core-Masterclass-and-Practice`), created and maintained by **[Arghya (Arghya876)](https://github.com/Arghya876)**!
 
 Designed to take college students, job seekers, and developers from **absolute basics** to **advanced production Java**, complete with **Real-World Analogies**, **Mermaid Architecture Diagrams**, **25+ Placement Q&As**, and **50+ Solved Practice Programs**.
+
+---
+
+## 👨‍💻 Developer & Author Profile
+
+| Resource | Official Link |
+| :--- | :--- |
+| 🐙 **GitHub Profile** | [github.com/Arghya876](https://github.com/Arghya876) |
+| 🌐 **Portfolio Website** | [arghya.tech](https://arghya.tech) |
+| 💼 **LinkedIn** | [linkedin.com/in/arghya876](https://linkedin.com/in/arghya876) |
+| 📸 **Instagram** | [instagram.com/arghya876](https://instagram.com/arghya876) |
+| 📘 **Facebook** | [facebook.com/arghya876](https://facebook.com/arghya876) |
 
 ---
 
@@ -18,6 +36,7 @@ Designed to take college students, job seekers, and developers from **absolute b
 
 ## 📜 Table of Contents
 - [☕ Ultimate Java Core Masterclass \& Practice Repository](#-ultimate-java-core-masterclass--practice-repository)
+  - [👨‍💻 Developer \& Author Profile](#-developer--author-profile)
   - [🎒 New to Coding? Start Here!](#-new-to-coding-start-here)
   - [📜 Table of Contents](#-table-of-contents)
   - [⏳ 1. History \& Evolution of Java](#-1-history--evolution-of-java)
@@ -150,4 +169,9 @@ java StreamAPIMasterclass
 
 ---
 
-⭐ **Happy Coding! Star this repository if you find it helpful.**
+## 🌐 Connect & Follow Arghya
+
+[![GitHub Follow](https://img.shields.io/github/followers/Arghya876?style=social)](https://github.com/Arghya876)
+[![LinkedIn Connect](https://img.shields.io/badge/Connect-Arghya-blue?style=social&logo=linkedin)](https://linkedin.com/in/arghya876)
+
+Crafted with ❤️ by **Arghya (Arghya876)**. Star ⭐ this repository if you find it helpful!

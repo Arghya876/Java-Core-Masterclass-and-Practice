@@ -9,7 +9,7 @@ import java.util.Queue;
  * =========================================================
  * Core Concepts Demonstrated:
  * 1. Queue interface: First-In-First-Out (FIFO) ordering.
- * 2. `LinkedList` / `ArrayDeque` as Queue.
+ * 2. `LinkedList` and `ArrayDeque` as Queues.
  * 3. `PriorityQueue`: Elements ordered by priority (Min-Heap by default, Max-Heap using Comparator).
  */
 public class QueueAndPriorityQueueDemo {
@@ -28,7 +28,15 @@ public class QueueAndPriorityQueueDemo {
         System.out.println("Serving Front Customer     : " + customerQueue.poll()); // Removes Alice
         System.out.println("Queue After Serving        : " + customerQueue);
 
-        // --- 2. PriorityQueue (Min-Heap: Smallest Number Has Highest Priority) ---
+        // --- 2. ArrayDeque Queue Implementation ---
+        System.out.println("\n--- ArrayDeque Queue Demo ---");
+        Queue<String> dequeQueue = new ArrayDeque<>();
+        dequeQueue.offer("Task A");
+        dequeQueue.offer("Task B");
+        System.out.println("ArrayDeque Queue           : " + dequeQueue);
+        System.out.println("Polling Task               : " + dequeQueue.poll());
+
+        // --- 3. PriorityQueue (Min-Heap: Smallest Number Has Highest Priority) ---
         System.out.println("\n--- Min-Heap PriorityQueue ---");
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         minHeap.offer(40);
@@ -41,7 +49,7 @@ public class QueueAndPriorityQueueDemo {
             System.out.print(minHeap.poll() + " ");
         }
 
-        // --- 3. PriorityQueue (Max-Heap: Largest Number Has Highest Priority) ---
+        // --- 4. PriorityQueue (Max-Heap: Largest Number Has Highest Priority) ---
         System.out.println("\n\n--- Max-Heap PriorityQueue ---");
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
         maxHeap.offer(40);
